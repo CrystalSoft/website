@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import 'boxicons'
 import { BrowserRouter as Router } from 'react-router-dom'
 
+import './i18n'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import ScrollToTop from './components/Utils/ScrollToTop'
