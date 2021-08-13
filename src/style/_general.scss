@@ -1,10 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
 
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: $text-color;
+}
+
+a {
+  color: $text-color;
+
+  &:hover {
+    color: $text-color-very-light;
+  }
 }
 
 a,
@@ -14,13 +29,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: $text-color;
-  font-size: 1em;
-  font-weight: normal;
-
-  &:hover {
-    color: $text-color;
-  }
+  font-size: 1.1em;
+  font-weight: 300;
 }
 
 h1,
@@ -37,9 +47,80 @@ ul {
   list-style: none;
 }
 
-body {
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-  font-size: 1.4em;
-  color: $text-color;
+.container {
+  position: relative;
+
+  .inner {
+    width: $page-width;
+    min-width: $page-min-width;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  }
+}
+
+#header {
+  background: linear-gradient(to right, $main-color-2, $main-color-1, $main-color-9) no-repeat bottom left;
+  background-size: 100% 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+
+  #logo {
+    height: 50px;
+    float: left;
+    margin-right: 120px;
+    overflow: visible;
+
+    img {
+      height: 60px;
+      margin-top: -10px;
+    }
+  }
+
+  #menu {
+    float: left;
+
+    ul {
+      margin-top: 15px;
+      overflow: hidden;
+
+      li {
+        float: left;
+        margin-right: 60px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          a {
+            color: $text-color-very-light;
+          }
+        }
+
+        a {
+          font-weight: 300;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+#sub-header {
+  background-color: #042833;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: $text-color-alternative;
+}
+
+#body {
+
+}
+
+#footer {
+
 }

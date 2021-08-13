@@ -3,19 +3,20 @@ $page-width: 60%;
 $page-width-smaller: 40%;
 $page-min-width-smaller: 500px;
 
-$text-color: #001D24;
+$text-color: #021419;
 $text-color-light: lighten($text-color, 10%);
-$text-color-very-light: lighten($text-color-light, 30%);
-$text-color-alternative: #DBF8FF;
+$text-color-very-light: lighten($text-color-light, 20%);
+$text-color-alternative: #E7F8FD;
 
-$main-color-1: #00CCFF;
-$main-color-2: #0066FF;
-$main-color-3: #808080;
-$main-color-4: #806680;
-$main-color-5: #FF3300;
-$main-color-6: #949494;
-$main-color-7: #51ADC4;
-$main-color-8: #CCFF00;
+$main-color-1: #8DDCF5;
+$main-color-2: #A98EF5;
+$main-color-3: #C1B5C2;
+$main-color-4: #F5A68E;
+$main-color-5: #F58E99;
+$main-color-6: #C7C7C7;
+$main-color-7: #AFAFEE;
+$main-color-8: #DDF58E;
+$main-color-9: #8EF591;
 
 $menu-color: $text-color-light;
 $menu-color-light: lighten($menu-color, 20%);
