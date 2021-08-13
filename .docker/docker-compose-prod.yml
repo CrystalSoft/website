@@ -1,0 +1,6 @@
+version: '3.8'
+
+services:
+  client:
+    command: >
+      /bin/sh -c "yarn --silent install && yarn --silent build && serve -s build"
