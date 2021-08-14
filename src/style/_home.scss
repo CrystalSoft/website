@@ -1,7 +1,7 @@
 #home {
   h4 {
     font-size: 2.5em;
-    margin-bottom: $default-big-padding;
+    margin-bottom: $default-padding;
     text-align: center;
   }
 }
@@ -23,6 +23,7 @@
   .inner {
     padding-left: 0;
     padding-right: 0;
+
     #promo-left {
       width: 50%;
       position: absolute;
@@ -59,6 +60,10 @@
   margin-left: -$default-padding;
   margin-right: -$default-padding;
 
+  h4 {
+    margin-bottom: $default-big-padding;
+  }
+
   .box {
     flex: 1 0 calc(33.29% - #{$default-padding * 2});
     display: flex;
@@ -87,13 +92,23 @@
       }
     }
   }
+}
 
-  .button {
-    margin: 0 auto;
-    margin-top: $default-big-padding;
+#home-show-case {
+  background-color: $main-color-0;
+
+  .inner {
+    text-align: center;
   }
 }
 
 #home-main {
-  background-color: $main-color-0;
+}
+
+#home-news {
+  background-color: lighten($main-color-6, 18%);
+
+  .inner {
+    text-align: center;
+  }
 }

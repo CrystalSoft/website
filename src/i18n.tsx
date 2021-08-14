@@ -4,14 +4,20 @@ import detector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
 i18n.on('languageChanged', function (lng) {
-  i18n.languages = ['it', 'en']
+  const languages = ['it', 'en']
+  i18n.languages = languages
 
   if (window.location.pathname == '/') {
     window.location.replace(lng + window.location.pathname)
-  }
+  } else {
+    if (window.location.pathname.substring(0, 3) !== '/' + lng) {
+      let pathname = window.location.pathname
+      languages.forEach(function (language: string) {
+        pathname = pathname.replace('/' + language, '')
+      })
 
-  if (window.location.pathname.substring(0, 3) !== '/' + lng) {
-    window.location.replace('/' + lng + window.location.pathname.slice(3))
+      window.location.replace('/' + lng + pathname)
+    }
   }
 })
 

@@ -14,10 +14,12 @@
   "label.disclaimer": "Software is provided \"as is\" and without any warranty. We therefore decline any moral or immoral, direct and/or indirect damage caused by our software.",
   "label.header": "We are more than a software house company.",
   "label.discover_more": "Discover more",
-  "label.explore": "Explore all products",
+  "label.explore": "Explore products",
+  "label.news": "Show all news",
   "label.more_info": "Do you need help?",
   "label.more_info_contact": "Contact us",
   "label.working": "Under construction",
+  "home.site.title": "CrystalSoft: software, apps, website and games",
   "home.label.promo": "Performances. Quality. Professionalism.",
   "home.label.promo_long": "For years, we dedicated our focus to the creation of freeware software and websites, starting from Microsoft ® Windows ® and approaching Google Android.",
   "home.promo.posso_partire_title": "New website created to help italian travelers",
@@ -31,5 +33,6 @@
   "home.label.mobile_description": "During the last years we have made several freeware software, we focus on this mode of distribution such as our program WinRefine, totally free.",
   "home.label.main": "We started Software development in 2005 for Microsoft Windows with the C++ programming language.",
   "home.label.main_2": "Over the years, we have led the development on other Operating Systems like Linux and since this moment, when we create a software, we think for all platforms as possible, creating cross-platform applications.",
-  "home.label.explore_products": "Explore latest projects"
+  "home.label.explore_products": "Explore latest projects",
+  "home.label.news": "Read our latest news"
 }

@@ -100,13 +100,6 @@ function App() {
             </div>
           </header>
         </div>
-        <div id={'sub-header'} className={'container'}>
-          <div className={'inner'}>
-            <h1>
-              <i className='bx-fw bx bxs-city' /> {t('label.header')}
-            </h1>
-          </div>
-        </div>
         <div id={'body'} className={'container'}>
           <Switch>
             <Route exact path={base} component={Home} />
@@ -118,7 +111,7 @@ function App() {
           </Switch>
         </div>
         <div id={'pre-footer'} className={'container'}>
-          <div className={'inner'}>
+          <div className={'inner padded'}>
             <h3>{t('label.more_info')}</h3>
             <Route
               path={base}
@@ -131,7 +124,7 @@ function App() {
           </div>
         </div>
         <footer id={'footer'} className={'container'}>
-          <div className={'inner'}>
+          <div className={'inner padded'}>
             <div id={'footer-logo'}>
               <Route
                 path={base}

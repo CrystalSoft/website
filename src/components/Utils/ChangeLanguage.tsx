@@ -13,8 +13,6 @@ const ChangeLanguage = () => {
     e.stopPropagation()
     e.preventDefault()
 
-    console.log(lng)
-
     return false
   }
 

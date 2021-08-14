@@ -17,8 +17,15 @@ const Home = () => {
     return (
       <div id={'home'}>
         <Helmet>
-          <title>{t('site.title')}</title>
+          <title>{t('home.site.title')}</title>
         </Helmet>
+        <div id={'sub-header'} className={'container'}>
+          <div className={'inner'}>
+            <h2>
+              <i className='bx-fw bx bxs-city' /> {t('label.header')}
+            </h2>
+          </div>
+        </div>
         <div id={'promo'}>
           <Waves />
           <div className={'inner padded'}>
@@ -71,15 +78,6 @@ const Home = () => {
                 <span>{t('home.label.mobile_description')}</span>
               </div>
             </div>
-            <Link to={'/about'} className={'button'}>
-              {t('label.explore')}
-            </Link>
-          </div>
-        </div>
-        <div id={'home-main'}>
-          <div className={'inner padded'}>
-            <p>{t('home.label.main')}</p>
-            <p>{t('home.label.main_2')}</p>
           </div>
         </div>
         <div id={'home-show-case'}>
@@ -94,7 +92,20 @@ const Home = () => {
               hendrerit felis et, pharetra urna. Donec bibendum erat vitae mi ullamcorper, eu consectetur lectus cursus. Fusce a leo
               gravida, laoreet risus vitae, feugiat turpis. Donec luctus gravida nisi.
             </p>
-
+            <Link to={'/about'} className={'button'}>
+              {t('label.explore')}
+            </Link>
+          </div>
+        </div>
+        <div id={'home-main'}>
+          <div className={'inner padded'}>
+            <p>{t('home.label.main')}</p>
+            <p>{t('home.label.main_2')}</p>
+          </div>
+        </div>
+        <div id={'home-news'}>
+          <div className={'inner padded'}>
+            <h4>{t('home.label.news')}</h4>
             <p>
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam accumsan elit et tellus consequat
               vehicula vel ac libero. Maecenas tortor diam, egestas vitae lorem ac, tempor sodales urna. Suspendisse lectus nulla, viverra
@@ -104,6 +115,9 @@ const Home = () => {
               non porta pretium, massa tortor ultricies ex, faucibus pulvinar mi massa sit amet turpis. Nam condimentum vitae urna eget
               semper. Donec posuere lectus neque, sollicitudin varius ante finibus vel.
             </p>
+            <Link to={'/about'} className={'button'}>
+              {t('label.news')}
+            </Link>
           </div>
         </div>
       </div>

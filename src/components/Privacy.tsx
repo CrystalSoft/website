@@ -24,7 +24,6 @@ const Privacy = () => {
               di tali dati, per i soggetti che interagiscono con www.crystalsoft.it ed è raggiungibile all’indirizzo corrispondente alla
               pagina iniziale: https://www.crystalsoft.it/
             </p>
-            <br />
             <p>
               L’informativa è reale solo per www.crystalsoft.it e non anche per altri siti web eventualmente consultati dall’utente tramite
               link in esso contenuti. Scopo del presente documento è fornire indicazioni circa le modalità, i tempi e la natura delle
@@ -34,7 +33,6 @@ const Privacy = () => {
               controllare periodicamente la presente pagina. Se l’utente ha meno di sedici anni, ai sensi dell’art. 8, c. 1 regolamento UE
               2016/679, dovrà legittimare il suo consenso attraverso l’autorizzazione dei genitori o di chi ne fa le veci.{' '}
             </p>
-            <br />
             <p>
               <h2>II - TRATTAMENTO DEI DATI</h2>
               <strong>Titolare dei dati</strong>
@@ -44,7 +42,6 @@ const Privacy = () => {
               profili sulla sicurezza. Relativamente al presente sito web il titolare del trattamento è CrystalSoft e per ogni chiarimento o
               esercizio dei diritti dell’utente potrà contattarlo al seguente indirizzo mail: info@crystalsoft.it{' '}
             </p>
-            <br />
             <p>
               <strong>Responsabile del trattamento dei dati</strong>
               <br />
@@ -52,7 +49,6 @@ const Privacy = () => {
               dati personali per conto del titolare del trattamento. Ai sensi dell’articolo 28 del Regolamento UE n. 2016/679, su nomina del
               titolare dei dati, il responsabile del trattamento dei dati del sito www.crystalsoft.it è: CrystalSoft
             </p>
-            <br />
             <p>
               <strong>Luogo trattamento dati</strong>
               <br />
@@ -61,7 +57,6 @@ const Privacy = () => {
               In caso di necessità, i dati connessi al servizio newsletter possono essere trattati dal responsabile del trattamento o
               soggetti dati esso incaricati a tal fine presso la relativa sede.{' '}
             </p>
-            <br />
             <p>
               <h2>III – COOKIES Tipo di cookies</h2>
               Il sito www.crystalsoft.it utilizza cookies per rendere l’esperienza di navigazione dell’utente più facile ed intuitiva: i
@@ -75,7 +70,6 @@ const Privacy = () => {
               Tuttavia, in questo caso l’utilizzo del sito e dei servizi offerti potrebbe risultarne compromesso. Per procedere senza
               modificare le opzioni relative ai cookies è sufficiente continuare con la navigazione.{' '}
             </p>
-            <br />
             <p>
               Di seguito le tipologie di cookies di cui il sito fa uso.
               <br />
@@ -102,7 +96,6 @@ const Privacy = () => {
               identificativi di sessione costituiti da numeri casuali generati dal server necessari per consentire l’esplorazione sicura ed
               efficiente del sito.{' '}
             </p>
-            <br />
             <p>
               <strong>Cookies di terze parti</strong>
               <br />
@@ -119,7 +112,6 @@ const Privacy = () => {
               visione delle informative privacy e delle indicazioni per gestire o disabilitare i cookies pubblicate nelle relative pagine
               web.{' '}
             </p>
-            <br />
             <p>
               <strong>Cookies di profilazione</strong>
               <br />
@@ -128,7 +120,6 @@ const Privacy = () => {
               di COOKIES l’utente dovrà dare un consenso esplicito. Si applicherà l’articolo 22 del Regolamento UE 2016/679 e l’articolo 122
               del Codice in materia di protezione dei dati.{' '}
             </p>
-            <br />
             <p>
               <h2>IV - DATI TRATTATI</h2>
               <strong>1. Modalità trattamento dati</strong>
@@ -137,12 +128,13 @@ const Privacy = () => {
               automatizzata durante le visite degli utenti. Le informazioni raccolte potrebbero essere le seguenti: Indirizzo internet
               protocol (IP);
             </p>
-            <p>– Tipo di browser e parametri del dispositivo usato per connettersi al sito;</p>
-            <p>– Nome dell’internet service provider (ISP);</p>
-            <p>– Data e orario di visita;</p>
-            <p>– Pagina web di provenienza del visitatore (referal) e di uscita;</p>
-            <p>– Eventualmente il numero di click.</p>
-            <br />
+            <p>
+              – Tipo di browser e parametri del dispositivo usato per connettersi al sito;
+              <br />– Nome dell’internet service provider (ISP);
+              <br />– Data e orario di visita;
+              <br />– Pagina web di provenienza del visitatore (referal) e di uscita;
+              <br />– Eventualmente il numero di click.
+            </p>
             <p>
               Le suddette informazioni sono test rate in forma automatizzata e raccolte in forma esclusivamente aggregata al fine di
               verificare il corretto funzionamento del sito e per motivi di sicurezza. Tali informazioni saranno test rate in base ai
@@ -163,7 +155,6 @@ const Privacy = () => {
               delle leggi. Spetta all’utente verificare di avere i permessi per l’immissione di dati personali di terzi o di contenuti
               tutelati dalle norme nazionali ed internazionali.
             </p>
-            <br />
             <p>
               <strong>2. Finalità del trattamento dati</strong>
               <br />I dati raccolti dal sito durante il suo funzionamento sono utilizzati esclusivamente per le finalità sopra indicate e
@@ -171,7 +162,6 @@ const Privacy = () => {
               utilizzati ai fini di sicurezza (blocco tentativi di danneggiamento del sito) sono conservati per il tempo strettamente
               necessario al raggiungimento del fine anteriormente indicato.{' '}
             </p>
-            <br />
             <p>
               <strong>3. Dati forniti dall’utente</strong>
               <br />
@@ -180,7 +170,6 @@ const Privacy = () => {
               eventuali altri dati personali inseriti nella missiva. Specifiche informative di sintesi verranno progressivamente riportate o
               visualizzate nelle pagine del sito predisposte per particolari servizi a richiesta.
             </p>
-            <br />
             <p>
               <strong>4. Supporto nella configurazione del proprio browser</strong>
               <br />
@@ -188,7 +177,6 @@ const Privacy = () => {
               potrebbe rimuovere le preferenze che ha impostato per il sito. Per ulteriori informazioni e supporto è possible anche visitare
               la pagina di aiuto specifica del web browser che si sta utilizzando: Internet explorer Firefox Safari Chrome Opera
             </p>
-            <br />
             <p>
               <strong>5.Plugin Social Network</strong>
               <br />
@@ -209,32 +197,26 @@ const Privacy = () => {
               <br />
               Linkedin: https://www.linkedin.com/legal/cookie/policy
             </p>
-            <br />
             <p>
               <h2>V - DIRITTI DELL’UTENTE L’art.</h2>
               13 co. 2 del Regolamento UE del 2016/679 elenca i diritti dell’utente. Il presente sito www.crystalsoft.it intende, pertanto,
               informare l’utente sull’esistenza:
-            </p>
-            <p>
+              <br />
               – del diritto dell’interessato di chiedere al titolare l’accesso ai dati personali (art. 15 Regolamento UE), il loro
               aggiornamento (art. 7, co. 3, lett. a del D.lgs 196/2003), la rettifica (art. 16 Regolamento UE), l’integrazione (art. 7, co.
               3 lett. a D.lgs 196/2003), la limitazione del trattamento che lo riguardino (art. 18 Regolamento UE) o di opporsi, per motivi
               legittimi, al loro trattamento (art. 21 Regolamento UE), oltre al diritto alla portabilità dei dati (art. 20 Regolamento UE);
-            </p>
-            <p>
+              <br />
               – del diritto di chiedere la cancellazione (art. 17 Regolamento UE), la trasformazione in forma anonima o il blocco dei dati
               trattati in violazione di legge, compresi quelli di cui non è necessaria la conservazione in relazione agli scopi per i quali
               i dati sono stati raccolti o successivamente trattati (art. 7 co. 3, lett. b del D.lgs. 196/2003);
-            </p>
-            <p>
+              <br />
               – del diritto di ottenere l’attestazione che le operazioni di aggiornamento, rettificazione, integrazione dei dati,
               cancellazione, blocco dei dati, trasformazione, sono state portate a conoscenza, anche per quanto riguarda il loro contenuto,
               di coloro ai quali i dati sono stati comunicati o diffusi, eccettuato il caso in cui tale adempimento si rivela impossibile o
               comporta un impiego di mezzi manifestamente sproporzionato rispetto al diritto tutelato (art. 7 co. 3, lett. c del D.lgs
               196/2003).
-            </p>
-            <br />
-            <p>
+              <br />
               Le richieste possono essere indirizzate al titolare del trattamento al suo indirizzo email summenzionato (senza formalità)
               oppure utilizzando il modello previsto dal Garante per la protezione dei dati personali. Qualora il trattamento sia basato
               sull’art. 6 paragrafo 1 lettera a – consenso espresso all’utilizzo – oppure sull’art. 9 paragrafo 2 lettera a – consenso
@@ -246,7 +228,6 @@ const Privacy = () => {
               approfondita dei diritti che Le competono, si vedano gli artt. 15 e ss. Del Regolamento UE 2016/679 e l’art. 7 del D.lgs.
               196/2003.{' '}
             </p>
-            <br />
             <p>
               <h2>VI – ADEMPIMENTI</h2>
               Il titolare notifica al Garante il trattamento di dati personali cui intende procedere, solo se il trattamento riguarda:
@@ -254,31 +235,23 @@ const Privacy = () => {
             <p>
               – dati genetici, biometrici o dati che indicano la posizione geografica di persone od oggetti mediante una rete di
               comunicazione elettronica;
-            </p>
-            <p>
-              – dati idonei a rivelare lo stato di salute e la vita sessuale, trattati ai fini di procreazione assistita, prestazione di
-              servizi sanitari per via telematica relativi a banche di dati o alla fornitura di beni, indagini epidemiologiche, rilevazione
-              di malattie mentali, infettive e diffusive, sieropositività, trapianto di organi e tessuti e monitoraggio della spesa
-              sanitaria;
-            </p>
-            <p>
+              <br />– dati idonei a rivelare lo stato di salute e la vita sessuale, trattati ai fini di procreazione assistita, prestazione
+              di servizi sanitari per via telematica relativi a banche di dati o alla fornitura di beni, indagini epidemiologiche,
+              rilevazione di malattie mentali, infettive e diffusive, sieropositività, trapianto di organi e tessuti e monitoraggio della
+              spesa sanitaria;
+              <br />
               – dati idonei a rivelare la vita sessuale o la sfera psichica, trattati da associazioni, enti ed organismi senza scopo di
               lucro, anche non riconosciuti, a carattere politico, filosofico, religioso o sindacale;
-            </p>
-            <p>
+              <br />
               – dati trattati con l’ausilio di strumenti elettronici volti a definire il profilo o la personalità dell’interessato o ad
               analizzare abitudini e scelte di consumo ovvero a monitorare l’utilizzo di servizi di comunicazione elettronica con esclusione
               dei trattamenti tecnicamente indispensabili per fornire i servizi medesimi agli utenti;
-            </p>
-            <p>
+              <br />
               – dati sensibili registrati in banche di dati a fini di selezione del personale per conto terzi nonché dati sensibili
               utilizzati per sondaggi di opinione, ricerche di mercato ed altre ricerche campionarie;
+              <br />– dati registrati in apposite banche dati gestite con strumenti elettronici e relative al rischio sulla solvibilità
+              economica, alla situazione patrimoniale, al corretto adempimento di obbligazioni, a comportamenti illeciti o fraudolenti.
             </p>
-            <p>
-              – dati registrati in apposite banche dati gestite con strumenti elettronici e relative al rischio sulla solvibilità economica,
-              alla situazione patrimoniale, al corretto adempimento di obbligazioni, a comportamenti illeciti o fraudolenti.
-            </p>
-            <br />
             <p>
               <h2>VI – SICUREZZA DEI DATI FORNITI</h2>
               Il presente sito tratta i dati degli utenti in maniera lecita e corretta, adottando le opportune misure di sicurezza volte ad
@@ -289,7 +262,6 @@ const Privacy = () => {
               soggetti esterni come (come fornitori di servizi tecnici terzi, corrieri postali, hosting provider, società informatiche,
               agenzie di comunicazione).{' '}
             </p>
-            <br />
             <p>
               <h2>VIII – MODIFICHE AL PRESENTE DOCUMENTO</h2>
               Il presente documento, pubblicato all’indirizzo: https://www.crystalsoft.it/privacy costituisce la privacy policy di questo

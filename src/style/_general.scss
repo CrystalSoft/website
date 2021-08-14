@@ -87,6 +87,10 @@ strong {
     &.padded {
       padding: $default-big-padding $default-padding;
     }
+
+    h1 {
+      margin-bottom: $default-padding;
+    }
   }
 }
 
@@ -115,6 +119,10 @@ strong {
     &.light {
       background-color: transparent;
       color: $text-color-light;
+    }
+
+    &.bordered {
+      border-color: transparent;
     }
   }
 }
@@ -193,6 +201,10 @@ strong {
 
         a {
           font-weight: 300;
+
+          &.active {
+            color: $text-color-very-light;
+          }
         }
       }
     }
@@ -213,7 +225,7 @@ strong {
   text-align: center;
 
   h3 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: $default-padding;
   }
 }
