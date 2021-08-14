@@ -12,6 +12,7 @@ body {
   font-weight: 300;
   font-size: 1em;
   color: $text-color;
+  position: relative;
 }
 
 a {
@@ -51,10 +52,23 @@ ul {
 
 p {
   margin-bottom: $default-padding;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 strong {
   font-weight: 400;
+}
+
+.fixable {
+  background-color: white;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .container {
@@ -69,6 +83,10 @@ strong {
     padding: $default-padding $default-padding;
     position: relative;
     overflow: hidden;
+
+    &.padded {
+      padding: $default-big-padding $default-padding;
+    }
   }
 }
 

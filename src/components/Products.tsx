@@ -10,7 +10,7 @@ const Products = () => {
   const { productName } = useParams<{ productName: string }>()
 
   if (ready) {
-    let product: any
+    let product: any = null
     if (productName !== undefined) {
       switch (productName) {
         case 'posso-partire':
@@ -42,7 +42,11 @@ const Products = () => {
           <title>{t('menu.products') + t('site.separator') + t('site.title')}</title>
         </Helmet>
         <div id={'products'} className={'container'}>
-          {product === null && <div className={'inner'}></div>}
+          {product === null && (
+            <div className={'inner'}>
+              <i className='bx bxs-error' /> {t('label.working')}
+            </div>
+          )}
           {product !== null && product}
         </div>
       </>

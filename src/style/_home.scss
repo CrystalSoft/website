@@ -44,3 +44,48 @@
     }
   }
 }
+
+#home-intro {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$default-padding;
+  margin-right: -$default-padding;
+  text-align: center;
+
+  h3 {
+    font-size: 2.5em;
+    margin-bottom: $default-big-padding;
+  }
+
+  .box {
+    flex: 1 0 33.29%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+    text-align: left;
+
+    .icon {
+      flex: 1 0 30%;
+      font-size: 4.5em;
+    }
+
+    .description {
+      flex: 1 0 70%;
+
+      strong {
+        display: block;
+        margin-bottom: $default-padding-3;
+      }
+    }
+  }
+
+  .button {
+    margin: 0 auto;
+    margin-top: $default-big-padding;
+  }
+}
+
+#home-main {
+  background-color: $main-color-0;
+}

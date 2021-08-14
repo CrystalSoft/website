@@ -24,79 +24,81 @@ function App() {
   if (ready) {
     return (
       <>
-        <div id={'pre-header'} className={'container'}>
-          <div className={'inner'}>
-            <ChangeLanguage />
+        <div className={'fixable'}>
+          <div id={'pre-header'} className={'container'}>
+            <div className={'inner'}>
+              <ChangeLanguage />
+            </div>
           </div>
+          <header id={'header'} className={'container'}>
+            <div className={'inner'}>
+              <div id={'logo'}>
+                <Route
+                  path={base}
+                  render={() => (
+                    <Link exact to={'/'}>
+                      <img src={logo} alt={'CrystalSoft'} />
+                    </Link>
+                  )}
+                />
+              </div>
+              <div id={'menu'}>
+                <ul>
+                  <li>
+                    <Route
+                      path={base}
+                      render={() => (
+                        <NavLink exact to={'/products'} activeClassName='active'>
+                          {t('menu.products')}
+                        </NavLink>
+                      )}
+                    />
+                  </li>
+                  <li>
+                    <Route
+                      path={base}
+                      render={() => (
+                        <NavLink exact to={'/tecnologies'}>
+                          {t('menu.tecnologies')}
+                        </NavLink>
+                      )}
+                    />
+                  </li>
+                  <li>
+                    <Route
+                      path={base}
+                      render={() => (
+                        <NavLink exact to={'/open-source'}>
+                          {t('menu.open_source')}
+                        </NavLink>
+                      )}
+                    />
+                  </li>
+                  <li>
+                    <Route
+                      path={base}
+                      render={() => (
+                        <NavLink exact to={'/news'}>
+                          {t('menu.news')}
+                        </NavLink>
+                      )}
+                    />
+                  </li>
+                  <li>
+                    <Route
+                      path={base}
+                      render={() => (
+                        <NavLink exact to={'/about'}>
+                          {t('menu.about')}
+                        </NavLink>
+                      )}
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
         </div>
-        <header id={'header'} className={'container'}>
-          <div className={'inner'}>
-            <div id={'logo'}>
-              <Route
-                path={base}
-                render={() => (
-                  <Link exact to={'/'}>
-                    <img src={logo} alt={'CrystalSoft'} />
-                  </Link>
-                )}
-              />
-            </div>
-            <div id={'menu'}>
-              <ul>
-                <li>
-                  <Route
-                    path={base}
-                    render={() => (
-                      <NavLink exact to={'/products'} activeClassName='active'>
-                        {t('menu.products')}
-                      </NavLink>
-                    )}
-                  />
-                </li>
-                <li>
-                  <Route
-                    path={base}
-                    render={() => (
-                      <NavLink exact to={'/tecnologies'}>
-                        {t('menu.tecnologies')}
-                      </NavLink>
-                    )}
-                  />
-                </li>
-                <li>
-                  <Route
-                    path={base}
-                    render={() => (
-                      <NavLink exact to={'/open-source'}>
-                        {t('menu.open_source')}
-                      </NavLink>
-                    )}
-                  />
-                </li>
-                <li>
-                  <Route
-                    path={base}
-                    render={() => (
-                      <NavLink exact to={'/news'}>
-                        {t('menu.news')}
-                      </NavLink>
-                    )}
-                  />
-                </li>
-                <li>
-                  <Route
-                    path={base}
-                    render={() => (
-                      <NavLink exact to={'/about'}>
-                        {t('menu.about')}
-                      </NavLink>
-                    )}
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </header>
         <div id={'sub-header'} className={'container'}>
           <div className={'inner'}>
             <h1>
@@ -187,6 +189,11 @@ function App() {
             </div>
             <div id={'footer-social'}>
               <ul>
+                <li>
+                  <a href={'https://github.com/CrystalSoft'} target={'_blank'} rel='noreferrer'>
+                    <i className='bx-fw bx bxl-github' /> GitHub
+                  </a>
+                </li>
                 <li>
                   <a href={'http://www.linkedin.com/profile/view?id=154451211'} target={'_blank'} rel='noreferrer'>
                     <i className='bx-fw bx bxl-facebook-square' /> LinkedIn

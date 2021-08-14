@@ -13,7 +13,9 @@ const PossoPartire = () => {
           <title>{'Posso partire?' + t('site.separator') + t('site.title')}</title>
         </Helmet>
         <div id={'product'} className={'container'}>
-          <div className={'inner'}></div>
+          <div className={'inner'}>
+            <i className='bx bxs-error' /> {t('label.working')}
+          </div>
         </div>
       </>
     )

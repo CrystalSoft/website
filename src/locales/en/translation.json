@@ -12,10 +12,19 @@
   "label.disclaimer": "Il Software è fornito \"cosi com'è\" e senza alcuna Garanzia. Si declina quindi qualsiasi danno morale o immorale, danno diretto e/o indiretto, provocato dal nostro Software.",
   "label.header": "We are more than a software house company.",
   "label.discover_more": "Discover more",
+  "label.explore": "Explore all products",
   "label.more_info": "Do you need help?",
   "label.more_info_contact": "Contact us",
+  "label.working": "Under construction",
   "home.label.promo": "Performances. Quality. Professionalism.",
   "home.label.promo_long": "For years, we dedicated our focus to the creation of freeware software and websites, starting from Microsoft ® Windows ® and approaching Google Android.",
   "home.promo.posso_partire_title": "New website created to help italian travelers",
-  "home.promo.posso_partire_description": "During the Covid-19 pandemic is actually very hard finding where italian travelers could go, with this service we help people understanding it."
+  "home.promo.posso_partire_description": "During the Covid-19 pandemic is actually very hard finding where italian travelers could go, with this service we help people understanding it.",
+  "home.label.intro": "Different thinking regarding the software engineering",
+  "home.label.freeware": "Freeware",
+  "home.label.freeware_description": "During the last years we have made several freeware software, we focus on this mode of distribution such as our program WinRefine, totally free.",
+  "home.label.web": "Web",
+  "home.label.web_description": "During the last years we have made several freeware software, we focus on this mode of distribution such as our program WinRefine, totally free.",
+  "home.label.mobile": "Mobile",
+  "home.label.mobile_description": "During the last years we have made several freeware software, we focus on this mode of distribution such as our program WinRefine, totally free."
 }
