@@ -9,15 +9,15 @@ i18n.on('languageChanged', function (lng) {
 
   if (window.location.pathname == '/') {
     window.location.replace(lng + window.location.pathname)
-  } else {
-    if (window.location.pathname.substring(0, 3) !== '/' + lng) {
-      let pathname = window.location.pathname
-      languages.forEach(function (language: string) {
-        pathname = pathname.replace('/' + language, '')
-      })
+  }
 
-      window.location.replace('/' + lng + pathname)
-    }
+  if (window.location.pathname.substring(0, 3) !== '/' + lng) {
+    let pathname = window.location.pathname
+    languages.forEach(function (language: string) {
+      pathname = pathname.replace('/' + language, '')
+    })
+
+    window.location.replace('/' + lng + pathname)
   }
 })
 

@@ -14,7 +14,7 @@ const PossoPartire = () => {
         <Helmet>
           <title>{'Posso partire?' + t('site.separator') + t('site.title')}</title>
         </Helmet>
-        <div id={'product'} className={'container'}>
+        <div id={'news'} className={'container'}>
           <div className={'inner'}>
             <i className='bx bxs-error' /> {t('label.working')}
           </div>

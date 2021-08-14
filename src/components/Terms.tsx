@@ -5,7 +5,7 @@ import { Link } from 'react-router-i18n'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 
-import MyLoader from './Utils/Loader'
+import MyLoader from './utils/Loader'
 
 const Terms = () => {
   const { t, ready } = useTranslation()

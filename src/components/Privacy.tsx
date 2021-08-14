@@ -1,7 +1,9 @@
+import React from 'react'
+
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
-import MyLoader from './Utils/Loader'
-import React from 'react'
+
+import MyLoader from './utils/Loader'
 
 const Privacy = () => {
   const { t, ready } = useTranslation()

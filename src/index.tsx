@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import './i18n'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import ScrollToTop from './components/Utils/ScrollToTop'
+import ScrollToTop from './components/utils/ScrollToTop'
 
 import './style/index.scss'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'

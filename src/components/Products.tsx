@@ -1,10 +1,12 @@
 import React from 'react'
+
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 
-import MyLoader from './Utils/Loader'
+import MyLoader from './utils/Loader'
 import PossoPartire from './products/PossoPartire'
+
 const Products = () => {
   const { t, ready } = useTranslation()
   const { productName } = useParams<{ productName: string }>()
@@ -41,7 +43,7 @@ const Products = () => {
         <Helmet>
           <title>{t('menu.products') + t('site.separator') + t('site.title')}</title>
         </Helmet>
-        <div id={'products'} className={'container'}>
+        <div id={'product-list'} className={'container'}>
           {product === null && (
             <div className={'inner'}>
               <i className='bx bxs-error' /> {t('label.working')}

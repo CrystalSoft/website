@@ -2,20 +2,24 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Switch, Route } from 'react-router-dom'
 // @ts-ignore
-import { Link, NavLink } from 'react-router-i18n'
+import { Link, NavLink, Redirect } from 'react-router-i18n'
 
 import logo from './images/logo.png'
 import logoAlternative from './images/logo-alternative.png'
 import './style/App.scss'
 
-import MyLoader from './components/Utils/Loader'
+import MyLoader from './components/utils/Loader'
 import Home from './components/Home'
 import NotFound from './components/NotFound'
 import Products from './components/Products'
-import ChangeLanguage from './components/Utils/ChangeLanguage'
+import ChangeLanguage from './components/utils/ChangeLanguage'
 import Terms from './components/Terms'
 import Privacy from './components/Privacy'
 import CookieConsent from 'react-cookie-consent'
+import Tecnologies from './components/Tecnologies'
+import OpenSource from './components/OpenSource'
+import News from './components/News'
+import About from './components/About'
 
 const base = '/:locale(en|it)?'
 
@@ -105,9 +109,14 @@ function App() {
             <Route exact path={base} component={Home} />
             <Route exact path={`${base}/products`} component={Products} />
             <Route exact path={`${base}/products/:productName`} component={Products} />
+            <Route exact path={`${base}/tecnologies`} component={Tecnologies} />
+            <Route exact path={`${base}/open-source`} component={OpenSource} />
+            <Route exact path={`${base}/news`} component={News} />
+            <Route exact path={`${base}/about`} component={About} />
             <Route exact path={`${base}/terms`} component={Terms} />
             <Route exact path={`${base}/privacy-policy`} component={Privacy} />
-            <Route exact path='*' component={NotFound} />
+            <Route exact path={`${base}/404`} component={NotFound} />
+            <Route path={base} render={() => <Redirect to='/404' />} />
           </Switch>
         </div>
         <div id={'pre-footer'} className={'container'}>
