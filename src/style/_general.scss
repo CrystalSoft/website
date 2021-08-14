@@ -85,27 +85,30 @@ strong {
     overflow: hidden;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       width: 100%;
-      min-width: initial;
+      min-width: 280px;
       max-width: initial;
       padding: $default-padding-mobile $default-padding-mobile;
     }
 
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
+    // Tablet and big phones
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+      min-width: 768px;
     }
 
     &.padded {
       padding: $default-big-padding $default-padding;
 
       // Mobile specific rules
-      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
         padding: $default-big-padding-mobile $default-big-padding-mobile;
       }
 
-      // Mobile portrait only specific rules
-      @media (min-width: 481px) and (max-width: 768px) {
+      // Tablet and big phones
+      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+        padding: $default-padding $default-padding;
       }
     }
 
@@ -274,12 +277,17 @@ strong {
 
   .inner {
     padding-bottom: 40px;
+
+    // Tablet and big phones
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+      padding-top: $default-padding-mobile;
+      padding-bottom: calc(#{$default-padding-mobile} + 10px);
+    }
   }
 
   #logo {
     height: 20px;
     float: left;
-    margin-right: 120px;
     overflow: visible;
 
     img {
@@ -288,10 +296,9 @@ strong {
     }
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       height: auto;
       float: right;
-      margin-right: 0;
 
       img {
         height: 50px;
@@ -299,16 +306,25 @@ strong {
       }
     }
 
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
+    // Tablet and big phones
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+      height: auto;
+      margin-right: 0;
+      float: left;
+
+      img {
+        height: 40px;
+        margin-top: 0;
+      }
     }
   }
 
   #menu {
-    float: left;
+    float: right;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      float: left;
       position: relative;
 
       &::after {
@@ -321,15 +337,17 @@ strong {
       }
     }
 
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
+    // Tablet and big phones
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+      float: right;
+      margin-top: 15px;
     }
 
     ul {
       overflow: hidden;
 
       // Mobile specific rules
-      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
         display: none;
         position: fixed;
         top: 0;
@@ -340,13 +358,15 @@ strong {
         overflow-y: auto;
       }
 
-      // Mobile portrait only specific rules
-      @media (min-width: 481px) and (max-width: 768px) {
-      }
-
       li {
         float: left;
         margin-right: 60px;
+
+        // Tablet and big phones
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+          font-size: 1em;
+          margin-right: 20px;
+        }
 
         &:last-child {
           margin-right: 0;
@@ -388,12 +408,13 @@ strong {
     margin-bottom: $default-padding;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       font-size: 2em;
     }
 
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
+    // Tablet and big phones
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2em;
     }
   }
 }
@@ -418,14 +439,10 @@ strong {
     padding-right: $default-padding;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       width: auto;
       float: none;
       text-align: center;
-    }
-
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
     }
 
     img {
@@ -440,15 +457,11 @@ strong {
     overflow: hidden;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       width: auto;
       float: none;
       padding-right: 0;
       margin-top: $default-padding-mobile;
-    }
-
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
     }
 
     .column {
@@ -456,14 +469,10 @@ strong {
       float: left;
 
       // Mobile specific rules
-      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
         &:last-child {
           text-align: right;
         }
-      }
-
-      // Mobile portrait only specific rules
-      @media (min-width: 481px) and (max-width: 768px) {
       }
     }
   }
@@ -473,7 +482,7 @@ strong {
     float: right;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       width: auto;
       float: none;
       margin-top: $default-padding-mobile;
@@ -488,10 +497,6 @@ strong {
           }
         }
       }
-    }
-
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
     }
   }
 
@@ -508,13 +513,15 @@ strong {
       padding-right: $default-padding;
 
       // Mobile specific rules
-      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
         display: block;
         margin-bottom: $default-padding-mobile;
       }
 
-      // Mobile portrait only specific rules
-      @media (min-width: 481px) and (max-width: 768px) {
+      // Tablet and big phones
+      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+        display: block;
+        margin-bottom: $default-padding-mobile;
       }
     }
   }

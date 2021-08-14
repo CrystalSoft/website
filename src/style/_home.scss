@@ -5,12 +5,13 @@
     text-align: center;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       font-size: 2em;
     }
 
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
+    // Tablet and big phones
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2em;
     }
   }
 }
@@ -24,12 +25,13 @@
     margin-bottom: $default-padding;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       font-size: 2em;
     }
 
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
+    // Tablet and big phones
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2em;
     }
   }
 
@@ -43,12 +45,14 @@
     padding-right: 0;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       padding-top: 0;
     }
 
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
+    // Tablet and big phones
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+      padding-left: $default-padding-2;
+      padding-right: $default-padding-2;
     }
 
     #promo-left {
@@ -59,17 +63,13 @@
       transform: translateY(-50%);
 
       // Mobile specific rules
-      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
         width: 100%;
         padding: $default-padding-mobile;
         position: relative;
         top: initial;
         left: initial;
         transform: none;
-      }
-
-      // Mobile portrait only specific rules
-      @media (min-width: 481px) and (max-width: 768px) {
       }
     }
 
@@ -78,14 +78,10 @@
       float: right;
 
       // Mobile specific rules
-      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
         width: auto;
         float: none;
         margin: $default-padding-mobile;
-      }
-
-      // Mobile portrait only specific rules
-      @media (min-width: 481px) and (max-width: 768px) {
       }
     }
 
@@ -116,12 +112,8 @@
     margin-bottom: $default-big-padding;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       margin-bottom: $default-padding-mobile;
-    }
-
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
     }
   }
 
@@ -136,15 +128,11 @@
     cursor: default;
 
     // Mobile specific rules
-    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
       flex: 1 0 100%;
       margin-left: 0;
       margin-right: 0;
       padding: $default-padding-mobile;
-    }
-
-    // Mobile portrait only specific rules
-    @media (min-width: 481px) and (max-width: 768px) {
     }
 
     &:hover {
