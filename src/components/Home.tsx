@@ -2,7 +2,8 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
+// @ts-ignore
+import { Link } from 'react-router-i18n'
 
 import MyLoader from './Utils/Loader'
 import Waves from './Waves'
@@ -22,12 +23,18 @@ const Home = () => {
             <div id={'promo-left'}>
               <h2>{t('home.label.promo')}</h2>
               <p>{t('home.label.promo_long')}</p>
-              <Link to={'/'} className={'button'}>
-                Discover more
+              <Link to={'/about'} className={'button'}>
+                {t('label.discover_more')}
               </Link>
             </div>
             <div id={'promo-right'}>
-              <div id={'promo-box'}></div>
+              <div id={'promo-box'}>
+                <h3>{t('home.promo.posso_partire_title')}</h3>
+                <p>{t('home.promo.posso_partire_description')}</p>
+                <Link to={'/products/posso-partire'} className={'button light'}>
+                  {t('label.discover_more')} <i className='bx-fw bx bxs-right-arrow-square' />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

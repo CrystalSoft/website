@@ -47,6 +47,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin-bottom: $default-padding;
+}
+
 .container {
   position: relative;
   z-index: 0;
@@ -59,6 +63,39 @@ ul {
     padding: $default-padding $default-padding;
     position: relative;
     overflow: hidden;
+  }
+}
+
+#pre-header {
+  background-color: lighten($main-color-3, 15%);
+
+  .inner {
+    padding: $default-padding-3;
+  }
+
+  #languages {
+    float: right;
+    font-size: 0.7em;
+
+    ul {
+      li {
+        float: left;
+        margin-right: $default-padding-3;
+
+        &:first-child {
+          margin-right: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
@@ -128,12 +165,23 @@ ul {
 .button {
   display: inline-block;
   background-color: $main-color-10;
-  padding: $default-padding-2 $default-padding;
+  padding: $default-padding-3 $default-padding-2;
   color: $text-color-alternative;
   text-decoration: none;
+
+  &.light {
+    background-color: transparent;
+    padding: 0;
+    color: $text-color-very-light;
+  }
 
   &:hover {
     background-color: lighten($main-color-10, 10%);
     color: $text-color-alternative;
+
+    &.light {
+      background-color: transparent;
+      color: $text-color-light;
+    }
   }
 }

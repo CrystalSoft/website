@@ -1,6 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Switch, Route, Link, NavLink } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
+// @ts-ignore
+import { Link, NavLink } from 'react-router-i18n'
 
 import logo from './images/logo.png'
 import './style/App.scss'
@@ -8,47 +10,85 @@ import './style/App.scss'
 import MyLoader from './components/Utils/Loader'
 import Home from './components/Home'
 import NotFound from './components/NotFound'
+import Products from './components/Products'
+import ChangeLanguage from './components/Utils/ChangeLanguage'
+
+const base = '/:locale(en|it)?'
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
   const { t, ready } = useTranslation()
 
   if (ready) {
     return (
       <>
+        <div id={'pre-header'} className={'container'}>
+          <div className={'inner'}>
+            <ChangeLanguage />
+          </div>
+        </div>
         <header id={'header'} className={'container'}>
           <div className={'inner'}>
             <div id={'logo'}>
-              <Link to={'/'}>
-                <img src={logo} alt={'CrystalSoft'} />
-              </Link>
+              <Route
+                path={base}
+                render={() => (
+                  <Link exact to={'/'}>
+                    <img src={logo} alt={'CrystalSoft'} />
+                  </Link>
+                )}
+              />
             </div>
             <div id={'menu'}>
               <ul>
                 <li>
-                  <NavLink exact to={'/products'} activeClassName='active'>
-                    Prodotti
-                  </NavLink>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <NavLink exact to={'/products'} activeClassName='active'>
+                        {t('menu.products')}
+                      </NavLink>
+                    )}
+                  />
                 </li>
                 <li>
-                  <NavLink exact to={'/'}>
-                    News
-                  </NavLink>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <NavLink exact to={'/tecnologies'}>
+                        {t('menu.tecnologies')}
+                      </NavLink>
+                    )}
+                  />
                 </li>
                 <li>
-                  <NavLink exact to={'/'}>
-                    Lorem
-                  </NavLink>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <NavLink exact to={'/open-source'}>
+                        {t('menu.open_source')}
+                      </NavLink>
+                    )}
+                  />
                 </li>
                 <li>
-                  <NavLink exact to={'/'}>
-                    Ipsum
-                  </NavLink>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <NavLink exact to={'/news'}>
+                        {t('menu.news')}
+                      </NavLink>
+                    )}
+                  />
                 </li>
                 <li>
-                  <NavLink exact to={'/'}>
-                    Dolorem
-                  </NavLink>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <NavLink exact to={'/about'}>
+                        {t('menu.about')}
+                      </NavLink>
+                    )}
+                  />
                 </li>
               </ul>
             </div>
@@ -57,13 +97,14 @@ function App() {
         <div id={'sub-header'} className={'container'}>
           <div className={'inner'}>
             <h1>
-              <i className='bx bxs-city' /> {t('label.header')}
+              <i className='bx-fw bx bxs-city' /> {t('label.header')}
             </h1>
           </div>
         </div>
         <div id={'body'} className={'container'}>
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path={base} component={Home} />
+            <Route path={`${base}/products`} component={Products} />
             <Route exact path='*' component={NotFound} />
           </Switch>
         </div>
