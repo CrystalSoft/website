@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { UIEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Switch, Route } from 'react-router-dom'
 // @ts-ignore
@@ -26,6 +26,22 @@ const base = '/:locale(en|it)?'
 function App() {
   const { t, ready } = useTranslation()
 
+  const [showMobileMenu, setShowMobileMenu] = React.useState(false)
+  const onMenuChildClick = (event: UIEvent) => {
+    event.preventDefault()
+    event.stopPropagation()
+
+    if ((event.target as HTMLElement).tagName === 'A') {
+      setShowMobileMenu(false)
+    }
+  }
+  const onMenuClick = (event: UIEvent) => {
+    event.preventDefault()
+    event.stopPropagation()
+
+    setShowMobileMenu(!showMobileMenu)
+  }
+
   if (ready) {
     return (
       <>
@@ -47,8 +63,8 @@ function App() {
                   )}
                 />
               </div>
-              <div id={'menu'}>
-                <ul>
+              <div id={'menu'} onClick={(e) => onMenuClick(e)} className={showMobileMenu ? 'showed' : ''}>
+                <ul onClick={(e) => onMenuChildClick(e)}>
                   <li>
                     <Route
                       path={base}
