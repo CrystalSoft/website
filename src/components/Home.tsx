@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-i18n'
 
 import MyLoader from './Utils/Loader'
-import Waves from './Waves'
+import Waves from './Utils/Waves'
 
 import logo from '../images/promo.png'
 
@@ -15,7 +15,7 @@ const Home = () => {
 
   if (ready) {
     return (
-      <>
+      <div id={'home'}>
         <Helmet>
           <title>{t('site.title')}</title>
         </Helmet>
@@ -43,7 +43,7 @@ const Home = () => {
         </div>
         <div className={'inner padded'}>
           <div id={'home-intro'}>
-            <h3>{t('home.label.intro')}</h3>
+            <h4>{t('home.label.intro')}</h4>
             <div className={'box'}>
               <div className={'icon'}>
                 <i className='bx bx-cloud-download' />
@@ -78,19 +78,13 @@ const Home = () => {
         </div>
         <div id={'home-main'}>
           <div className={'inner padded'}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor augue in eleifend consectetur. Aliquam consectetur
-              felis vitae iaculis lacinia. Duis ex augue, maximus non fermentum non, lobortis at ipsum. Proin auctor, tortor vitae vehicula
-              viverra, ex tellus condimentum ex, fermentum volutpat lectus justo in libero. Phasellus sed augue mattis, imperdiet nisi eget,
-              scelerisque odio. Maecenas aliquet magna ac tellus elementum pulvinar. Vestibulum aliquam porta feugiat. Morbi vel congue
-              dolor, maximus ornare sem. Nunc convallis ligula ac mi rutrum ullamcorper. Fusce sed mauris magna. Sed in fringilla turpis.
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas mattis feugiat tortor id
-              euismod.
-            </p>
+            <p>{t('home.label.main')}</p>
+            <p>{t('home.label.main_2')}</p>
           </div>
         </div>
         <div id={'home-show-case'}>
           <div className={'inner padded'}>
+            <h4>{t('home.label.explore_products')}</h4>
             <p>
               Aenean gravida tortor eros, at condimentum velit viverra eu. Nunc et justo accumsan, feugiat enim a, eleifend sapien. Cras ut
               laoreet tellus. Integer mi ligula, fringilla quis placerat sed, fringilla quis justo. Nulla facilisi. Donec blandit vulputate
@@ -112,7 +106,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </>
+      </div>
     )
   }
 

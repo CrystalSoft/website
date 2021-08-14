@@ -11,10 +11,10 @@
   "menu.contacts": "Contatti",
   "menu.terms": "Termini e Condizioni",
   "menu.privacy": "Privacy Policy",
-  "label.disclaimer": "Il Software è fornito \"cosi com'è\" e senza alcuna Garanzia. Si declina quindi qualsiasi danno morale o immorale, danno diretto e/o indiretto, provocato dal nostro Software.",
+  "label.disclaimer": "Il software è fornito \"cosi com'è\" e senza alcuna garanzia. Si declina quindi qualsiasi danno morale o immorale, danno diretto e/o indiretto, provocato dal nostro software.",
   "label.header": "Siamo molto di più che un'azienda che produce software.",
   "label.discover_more": "Scopri di più",
-  "label.explore": "Explore tutti i prodotti",
+  "label.explore": "Esplora tutti i prodotti",
   "label.more_info": "Hai bisogno di assistenza?",
   "label.more_info_contact": "Contattaci",
   "label.working": "In costruzione",
@@ -28,5 +28,8 @@
   "home.label.web": "Web",
   "home.label.web_description": "Il web è da sempre uno dei nostri pilastri portanti, sviluppiamo siti web di qualità e fruibili in tutti i dispositivi in modo agevole e usabile.",
   "home.label.mobile": "Mobile",
-  "home.label.mobile_description": "Il mondo Mobile ci affascina moltissimo e stiamo puntando molto sulla piattaforma Android, in cantiere ci sono molti progetti interessanti che presto rilasceremo."
+  "home.label.mobile_description": "Il mondo Mobile ci affascina moltissimo e stiamo puntando molto sulla piattaforma Android, in cantiere ci sono molti progetti interessanti che presto rilasceremo.",
+  "home.label.main": "Abbiamo iniziato a sviluppare software nel 2005 creando programmi per Windows con il linguaggio di programmazione C++.",
+  "home.label.main_2": "Nel corso degli anni abbiamo portato lo sviluppo anche su altri Sistemi Operativi come Linux e da quel momento, quando creiamo un Software, lo pensiamo per tutte le piattaforme possibili, creando quindi Software Cross-Platform.",
+  "home.label.explore_products": "Esplora gli ultimi progetti"
 }

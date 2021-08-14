@@ -11,7 +11,7 @@
   "menu.contacts": "Contacts",
   "menu.terms": "Terms and Conditions",
   "menu.privacy": "Privacy Policy",
-  "label.disclaimer": "Il Software è fornito \"cosi com'è\" e senza alcuna Garanzia. Si declina quindi qualsiasi danno morale o immorale, danno diretto e/o indiretto, provocato dal nostro Software.",
+  "label.disclaimer": "Software is provided \"as is\" and without any warranty. We therefore decline any moral or immoral, direct and/or indirect damage caused by our software.",
   "label.header": "We are more than a software house company.",
   "label.discover_more": "Discover more",
   "label.explore": "Explore all products",
@@ -28,5 +28,8 @@
   "home.label.web": "Web",
   "home.label.web_description": "During the last years we have made several freeware software, we focus on this mode of distribution such as our program WinRefine, totally free.",
   "home.label.mobile": "Mobile",
-  "home.label.mobile_description": "During the last years we have made several freeware software, we focus on this mode of distribution such as our program WinRefine, totally free."
+  "home.label.mobile_description": "During the last years we have made several freeware software, we focus on this mode of distribution such as our program WinRefine, totally free.",
+  "home.label.main": "We started Software development in 2005 for Microsoft Windows with the C++ programming language.",
+  "home.label.main_2": "Over the years, we have led the development on other Operating Systems like Linux and since this moment, when we create a software, we think for all platforms as possible, creating cross-platform applications.",
+  "home.label.explore_products": "Explore latest projects"
 }
