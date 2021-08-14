@@ -49,33 +49,36 @@ ul {
 
 .container {
   position: relative;
+  z-index: 0;
 
   .inner {
     width: $page-width;
     min-width: $page-min-width;
+    max-width: $page-max-width;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: $default-padding $default-padding;
     position: relative;
+    overflow: hidden;
   }
 }
 
 #header {
   background: linear-gradient(to right, $main-color-2, $main-color-1, $main-color-9) no-repeat bottom left;
   background-size: 100% 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  overflow: hidden;
+
+  .inner {
+    padding-bottom: 40px;
+  }
 
   #logo {
-    height: 50px;
+    height: 20px;
     float: left;
     margin-right: 120px;
     overflow: visible;
 
     img {
       height: 60px;
-      margin-top: -10px;
+      margin-top: -25px;
     }
   }
 
@@ -83,7 +86,6 @@ ul {
     float: left;
 
     ul {
-      margin-top: 15px;
       overflow: hidden;
 
       li {
@@ -110,9 +112,7 @@ ul {
 }
 
 #sub-header {
-  background-color: #042833;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-color: $main-color-10;
   text-align: center;
   color: $text-color-alternative;
 }
@@ -123,4 +123,17 @@ ul {
 
 #footer {
 
+}
+
+.button {
+  display: inline-block;
+  background-color: $main-color-10;
+  padding: $default-padding-2 $default-padding;
+  color: $text-color-alternative;
+  text-decoration: none;
+
+  &:hover {
+    background-color: lighten($main-color-10, 10%);
+    color: $text-color-alternative;
+  }
 }

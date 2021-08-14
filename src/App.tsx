@@ -4,8 +4,10 @@ import { Switch, Route, Link, NavLink } from 'react-router-dom'
 
 import logo from './images/logo.png'
 import './style/App.scss'
+
 import MyLoader from './components/Utils/Loader'
 import Home from './components/Home'
+import NotFound from './components/NotFound'
 
 function App() {
   // eslint-disable-next-line no-unused-vars
@@ -24,7 +26,7 @@ function App() {
             <div id={'menu'}>
               <ul>
                 <li>
-                  <NavLink exact to={'/'} activeClassName='active'>
+                  <NavLink exact to={'/products'} activeClassName='active'>
                     Prodotti
                   </NavLink>
                 </li>
@@ -55,13 +57,14 @@ function App() {
         <div id={'sub-header'} className={'container'}>
           <div className={'inner'}>
             <h1>
-              {t('We are more than a software house company')} <i className='bx bxs-right-arrow' />
+              <i className='bx bxs-city' /> {t('label.header')}
             </h1>
           </div>
         </div>
         <div id={'body'} className={'container'}>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='*' component={NotFound} />
           </Switch>
         </div>
         <footer id={'footer'} className={'container'}></footer>

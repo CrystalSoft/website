@@ -1,33 +1,36 @@
 .waves {
-  position: fixed;
-  top: 0;
+  width: 1500px;
+  height: 1300px;
+  position: absolute;
+  top: -200px;
+  right: -550px;
   transform: rotate(80deg);
-  left: 0;
+  z-index: 0;
 
   .wave {
     position: absolute;
-    opacity: .4;
-    width: 1500px;
-    height: 1300px;
-    margin-left: -150px;
-    margin-top: -250px;
-    border-radius: 43%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    border-radius: 92%;
 
-    .wave-one {
-      animation: rotate 7000ms infinite linear;
-      opacity: .1;
-      background: #0af;
+    &.wave-one {
+      animation: rotate 14000ms infinite linear;
+      opacity: .3;
+      background-color: $main-color-1;
     }
 
-    .wave-two {
-      animation: rotate 3000ms infinite linear;
-      opacity: .1;
-      background: black;
+    &.wave-two {
+      animation: rotate 10000ms infinite linear;
+      opacity: .2;
+      background-color: $main-color-2;
     }
 
-    .wave-three {
-      animation: rotate 7500ms infinite linear;
-      background-color: #77daff;
+    &.wave-three {
+      animation: rotate 20000ms infinite linear;
+      background-color: $main-color-9;
     }
   }
 }
