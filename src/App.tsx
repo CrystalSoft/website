@@ -15,6 +15,7 @@ import Products from './components/Products'
 import ChangeLanguage from './components/Utils/ChangeLanguage'
 import Terms from './components/Terms'
 import Privacy from './components/Privacy'
+import CookieConsent from 'react-cookie-consent'
 
 const base = '/:locale(en|it)?'
 
@@ -222,6 +223,16 @@ function App() {
             </div>
           </div>
         </footer>
+        <CookieConsent
+          location='bottom'
+          buttonText={t('site.cookie_accept')}
+          cookieName='crystalsoft-cookie'
+          style={{ fontSize: '1em', color: '#000', background: '#afafee' }}
+          buttonStyle={{ background: '#042833', color: '#FFF', fontSize: '1em' }}
+          expires={150}
+        >
+          {t('site.cookie_policy')}
+        </CookieConsent>
       </>
     )
   }

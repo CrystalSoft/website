@@ -1,7 +1,10 @@
 import { useTranslation } from 'react-i18next'
 import React, { UIEvent } from 'react'
 
+import { useLocation } from 'react-router-dom'
+
 const ChangeLanguage = () => {
+  const { pathname } = useLocation()
   const { ready, i18n } = useTranslation()
 
   const changeLanguage = (e: UIEvent, lng: string) => {
@@ -24,7 +27,7 @@ const ChangeLanguage = () => {
         {ready &&
           i18n.languages.map((lng: string) => (
             <li key={lng}>
-              <a href={'/' + lng + '/'} onClick={(e) => changeLanguage(e, lng)}>
+              <a href={'/' + lng + pathname.slice(3)} onClick={(e) => changeLanguage(e, lng)}>
                 {lng}
               </a>
             </li>

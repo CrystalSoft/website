@@ -1,6 +1,8 @@
 {
   "site.title": "CrystalSoft",
   "site.separator": " - ",
+  "site.cookie_accept": "Accetto",
+  "site.cookie_policy": "Per offrirti una migliore esperienza di navigazione online, questo sito web usa dei cookie, propri e di terze parti. Continuando a navigare sul sito acconsenti all'utilizzo dei cookie.",
   "menu.products": "Prodotti",
   "menu.tecnologies": "Tecnologie",
   "menu.open_source": "Open Source",

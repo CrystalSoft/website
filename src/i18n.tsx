@@ -9,6 +9,10 @@ i18n.on('languageChanged', function (lng) {
   if (window.location.pathname == '/') {
     window.location.replace(lng + window.location.pathname)
   }
+
+  if (window.location.pathname.substring(0, 3) !== '/' + lng) {
+    window.location.replace('/' + lng + window.location.pathname.slice(3))
+  }
 })
 
 import translationEN from './locales/en/translation.json'
