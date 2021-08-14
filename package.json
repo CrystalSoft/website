@@ -30,9 +30,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --fix src/**/*.tsx",
+    "format": "prettier src/**/*.tsx --write . --config ./.prettierrc"
   },
   "eslintConfig": {
     "extends": [

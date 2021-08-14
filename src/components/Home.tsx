@@ -52,39 +52,6 @@ const Home = () => {
           </p>
 
           <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas a urna lectus. Integer
-            enim sapien, scelerisque in ultricies sed, maximus nec erat. Pellentesque nec purus ut purus auctor aliquet. Nulla tempor sapien
-            eu leo sagittis, posuere laoreet mi feugiat. Donec non augue at nisi pretium ullamcorper faucibus at leo. Nullam ornare libero
-            porttitor, maximus nunc facilisis, semper velit. Ut id tellus varius, pulvinar orci sit amet, malesuada nulla. Mauris ultrices
-            tellus sapien, non faucibus erat fringilla at.
-          </p>
-
-          <p>
-            Maecenas vestibulum tincidunt risus quis tincidunt. Morbi volutpat justo mauris, vehicula mollis quam ultricies a. Curabitur
-            lacinia hendrerit metus id placerat. Aenean ornare risus quis mi tristique faucibus. Nam volutpat auctor ligula, ut consectetur
-            justo sagittis non. Nulla elementum volutpat porttitor. Nulla pretium urna eget orci molestie, ut iaculis urna ornare. Aenean
-            sit amet malesuada ipsum, ut gravida eros. Cras sit amet justo nunc.
-          </p>
-
-          <p>
-            Suspendisse varius pulvinar euismod. Morbi turpis erat, placerat at felis quis, interdum rutrum justo. Morbi vitae orci in erat
-            tempor egestas. Fusce dui erat, dictum a cursus id, ullamcorper sed leo. Aenean quis mattis velit, ullamcorper mattis lorem.
-            Aliquam nisl nunc, semper at leo id, tincidunt euismod lorem. Suspendisse potenti. Fusce dolor libero, laoreet et sodales sed,
-            lobortis sit amet tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam
-            dapibus interdum diam vulputate molestie. In dui enim, luctus in faucibus at, bibendum quis risus. Duis ac lorem nisl. Sed et
-            urna sit amet nibh gravida elementum at id velit.
-          </p>
-
-          <p>
-            Sed sagittis, odio ut vulputate placerat, enim tortor blandit mi, ac varius leo ante vehicula lorem. Mauris vel nunc tincidunt,
-            accumsan metus ut, dictum nisl. Sed eget metus eu turpis fringilla cursus nec at dolor. In sed egestas lectus. Donec fringilla,
-            lacus eu sagittis blandit, turpis ante dapibus eros, at vehicula mi dolor sit amet erat. Nulla vehicula neque eget elit commodo
-            tristique. Nunc diam nisi, iaculis at erat a, posuere viverra sem. Nullam efficitur enim a nibh cursus tempor. Phasellus
-            ullamcorper scelerisque placerat. Aenean et rutrum nisl. Morbi eget est elit. Fusce dolor nisl, efficitur ut eros sed, tempor
-            porttitor libero.
-          </p>
-
-          <p>
             Aenean gravida tortor eros, at condimentum velit viverra eu. Nunc et justo accumsan, feugiat enim a, eleifend sapien. Cras ut
             laoreet tellus. Integer mi ligula, fringilla quis placerat sed, fringilla quis justo. Nulla facilisi. Donec blandit vulputate
             nulla, et egestas nulla lacinia vitae. Curabitur et neque lorem. Pellentesque porttitor eros consequat, sagittis enim vitae,
@@ -102,24 +69,6 @@ const Home = () => {
             blandit. Pellentesque erat nisi, semper et purus id, molestie feugiat tellus. Fusce sed facilisis nunc. Mauris sagittis, mi non
             porta pretium, massa tortor ultricies ex, faucibus pulvinar mi massa sit amet turpis. Nam condimentum vitae urna eget semper.
             Donec posuere lectus neque, sollicitudin varius ante finibus vel.
-          </p>
-
-          <p>
-            Aliquam erat volutpat. Praesent venenatis, ante quis malesuada aliquet, tortor nunc fringilla lacus, nec lacinia tortor turpis
-            id purus. Praesent erat mauris, accumsan mollis ligula id, vehicula lobortis felis. Cras rhoncus rhoncus lectus, id eleifend
-            nunc feugiat vitae. Sed rhoncus nisi in sapien tempus aliquam. Aliquam vestibulum sagittis dui, ac tincidunt mauris euismod sit
-            amet. Vestibulum aliquet dapibus odio, non malesuada urna pulvinar eu. In in tincidunt felis. Sed quis dolor pretium, feugiat
-            quam quis, mattis ligula. Mauris pulvinar est vel nibh aliquam, ac convallis magna condimentum. Fusce pretium bibendum magna, ut
-            sodales lectus sodales at. Maecenas tincidunt ultrices feugiat. Mauris pellentesque urna ut semper facilisis. Mauris accumsan
-            mauris ante, tristique cursus nisl sodales vitae.
-          </p>
-
-          <p>
-            Morbi sed auctor nisl, nec volutpat tortor. Duis non purus quis velit condimentum placerat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pharetra nisi, dignissim
-            hendrerit nulla. Nullam imperdiet nulla erat, eget dictum felis congue sit amet. Vestibulum viverra risus in lectus facilisis
-            luctus a et arcu. Sed ipsum justo, aliquet nec lacinia sit amet, placerat sed risus. Aliquam vitae diam metus. Nulla facilisi.
-            Vivamus commodo mi felis, vel ultricies elit tempor non. Etiam eget ultrices nunc.
           </p>
 
           <p>

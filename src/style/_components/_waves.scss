@@ -13,18 +13,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: .1;
+    opacity: 0.1;
     border-radius: 92%;
 
     &.wave-one {
       animation: rotate 14000ms infinite linear;
-      opacity: .3;
+      opacity: 0.3;
       background-color: $main-color-1;
     }
 
     &.wave-two {
       animation: rotate 10000ms infinite linear;
-      opacity: .2;
+      opacity: 0.2;
       background-color: $main-color-2;
     }
 
@@ -36,6 +36,10 @@
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  from { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
 }

@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom'
 import { Link, NavLink } from 'react-router-i18n'
 
 import logo from './images/logo.png'
+import logoAlternative from './images/logo-alternative.png'
 import './style/App.scss'
 
 import MyLoader from './components/Utils/Loader'
@@ -113,7 +114,79 @@ function App() {
             <Route exact path='*' component={NotFound} />
           </Switch>
         </div>
-        <footer id={'footer'} className={'container'}></footer>
+        <div id={'pre-footer'} className={'container'}>
+          <div className={'inner'}>
+            <h3>{t('label.more_info')}</h3>
+            <Route
+              path={base}
+              render={() => (
+                <Link to={'/contacts'} className={'button bordered'}>
+                  {t('label.more_info_contact')}
+                </Link>
+              )}
+            />
+          </div>
+        </div>
+        <footer id={'footer'} className={'container'}>
+          <div className={'inner'}>
+            <div id={'footer-logo'}>
+              <Route
+                path={base}
+                render={() => (
+                  <Link exact to={'/'}>
+                    <img src={logoAlternative} alt={'CrystalSoft'} />
+                  </Link>
+                )}
+              />
+            </div>
+            <div id={'footer-menu'}>
+              <ul className={'column'}>
+                <li>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <Link exact to={'/about'}>
+                        {t('menu.about')}
+                      </Link>
+                    )}
+                  />
+                </li>
+                <li>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <Link exact to={'/contacts'}>
+                        {t('menu.contacts')}
+                      </Link>
+                    )}
+                  />
+                </li>
+              </ul>
+              <ul className={'column'}>
+                <li>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <Link exact to={'/terms'}>
+                        {t('menu.terms')}
+                      </Link>
+                    )}
+                  />
+                </li>
+                <li>
+                  <Route
+                    path={base}
+                    render={() => (
+                      <Link exact to={'/privacy-policy'}>
+                        {t('menu.privacy')}
+                      </Link>
+                    )}
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
       </>
     )
   }

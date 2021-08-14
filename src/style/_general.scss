@@ -16,6 +16,7 @@ body {
 
 a {
   color: $text-color;
+  text-decoration: none;
 
   &:hover {
     color: $text-color-very-light;
@@ -39,6 +40,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   width: 100%;
   display: block;
 }
@@ -63,6 +65,35 @@ p {
     padding: $default-padding $default-padding;
     position: relative;
     overflow: hidden;
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: $main-color-10;
+  padding: $default-padding-3 $default-padding-2;
+  color: $text-color-alternative;
+
+  &.light {
+    background-color: transparent;
+    padding: 0;
+    color: $text-color-very-light;
+  }
+
+  &.bordered {
+    background-color: transparent;
+    border: 1px solid $main-color-10;
+    color: $main-color-10;
+  }
+
+  &:hover {
+    background-color: lighten($main-color-10, 10%);
+    color: $text-color-alternative;
+
+    &.light {
+      background-color: transparent;
+      color: $text-color-light;
+    }
   }
 }
 
@@ -92,7 +123,6 @@ p {
 
         a {
           text-transform: uppercase;
-          text-decoration: none;
         }
       }
     }
@@ -141,7 +171,6 @@ p {
 
         a {
           font-weight: 300;
-          text-decoration: none;
         }
       }
     }
@@ -155,33 +184,47 @@ p {
 }
 
 #body {
+}
 
+#pre-footer {
+  background-color: lighten($main-color-1, 10%);
+  text-align: center;
+
+  h3 {
+    font-size: 2em;
+  }
 }
 
 #footer {
-
-}
-
-.button {
-  display: inline-block;
   background-color: $main-color-10;
-  padding: $default-padding-3 $default-padding-2;
   color: $text-color-alternative;
-  text-decoration: none;
 
-  &.light {
-    background-color: transparent;
-    padding: 0;
-    color: $text-color-very-light;
-  }
-
-  &:hover {
-    background-color: lighten($main-color-10, 10%);
+  a {
     color: $text-color-alternative;
 
-    &.light {
-      background-color: transparent;
-      color: $text-color-light;
+    &:hover {
+      color: $text-color-alternative-ligh;
     }
+  }
+
+  #footer-logo {
+    width: 25%;
+    float: left;
+    margin-right: $default-padding;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  #footer-menu {
+    width: 50%;
+    float: left;
+    margin-right: $default-padding;
+  }
+
+  #footer-social {
+    width: 25%;
+    float: left;
   }
 }

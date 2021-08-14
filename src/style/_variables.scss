@@ -4,27 +4,28 @@ $page-max-width: 1200px;
 $page-width-smaller: 40%;
 $page-min-width-smaller: 500px;
 
-$main-color-0: #E7F8FD;
-$main-color-1: #8DDCF5;
-$main-color-2: #A98EF5;
-$main-color-3: #C1B5C2;
-$main-color-4: #F5A68E;
-$main-color-5: #F58E99;
-$main-color-6: #C7C7C7;
-$main-color-7: #AFAFEE;
-$main-color-8: #DDF58E;
-$main-color-9: #8EF591;
+$main-color-0: #e7f8fd;
+$main-color-1: #8ddcf5;
+$main-color-2: #a98ef5;
+$main-color-3: #c1b5c2;
+$main-color-4: #f5a68e;
+$main-color-5: #f58e99;
+$main-color-6: #c7c7c7;
+$main-color-7: #afafee;
+$main-color-8: #ddf58e;
+$main-color-9: #8ef591;
 $main-color-10: #042833;
 
 $text-color: #021419;
 $text-color-light: lighten($text-color, 10%);
 $text-color-very-light: lighten($text-color-light, 20%);
 $text-color-alternative: $main-color-0;
+$text-color-alternative-ligh: darken($text-color-alternative, 20%);
 
 $menu-color: $text-color-light;
 $menu-color-light: lighten($menu-color, 20%);
 
-$background-basic-color: #DBF8FF;
+$background-basic-color: #dbf8ff;
 
 $default-padding: 30px;
 $default-padding-2: 20px;
