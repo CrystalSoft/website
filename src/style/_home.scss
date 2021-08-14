@@ -1,16 +1,16 @@
-h2 {
-  font-size: 3em;
-  margin-bottom: $default-padding;
-}
-
-h3 {
-  font-size: 1.5em;
-  margin-bottom: $default-padding;
-}
-
 #promo {
   position: relative;
   overflow: hidden;
+
+  h2 {
+    font-size: 3em;
+    margin-bottom: $default-padding;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: $default-padding;
+  }
 
   .inner {
     padding-left: 0;

@@ -185,6 +185,34 @@ function App() {
                 </li>
               </ul>
             </div>
+            <div id={'footer-social'}>
+              <ul>
+                <li>
+                  <a href={'http://www.linkedin.com/profile/view?id=154451211'} target={'_blank'} rel='noreferrer'>
+                    <i className='bx-fw bx bxl-facebook-square' /> LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href={'https://www.facebook.com/CrystalSoft'} target={'_blank'} rel='noreferrer'>
+                    <i className='bx-fw bx bxl-linkedin-square' /> Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href={'https://play.google.com/store/apps/dev?id=8818986490284631607'} target={'_blank'} rel='noreferrer'>
+                    <i className='bx-fw bx bxl-google' /> Play Store
+                  </a>
+                </li>
+                <li>
+                  <a href={'https://www.youtube.com/channel/UCmS14OSzr_mtNMP03hFi2Ig'} target={'_blank'} rel='noreferrer'>
+                    <i className='bx-fw bx bxl-youtube' /> YouTube
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id={'footer-note'}>
+              <span className={'copyright'}>&copy; 2021 CrystalSoft</span>
+              <span>{t('label.disclaimer')}</span>
+            </div>
           </div>
         </footer>
       </>

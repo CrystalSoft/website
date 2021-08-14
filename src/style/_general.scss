@@ -53,6 +53,10 @@ p {
   margin-bottom: $default-padding;
 }
 
+strong {
+  font-weight: 400;
+}
+
 .container {
   position: relative;
   z-index: 0;
@@ -192,12 +196,15 @@ p {
 
   h3 {
     font-size: 2em;
+    margin-bottom: $default-padding;
   }
 }
 
 #footer {
   background-color: $main-color-10;
   color: $text-color-alternative;
+  font-size: 0.8em;
+  line-height: 2.5em;
 
   a {
     color: $text-color-alternative;
@@ -210,21 +217,41 @@ p {
   #footer-logo {
     width: 25%;
     float: left;
-    margin-right: $default-padding;
+    padding-right: $default-padding;
 
     img {
-      width: 200px;
+      width: 160px;
     }
   }
 
   #footer-menu {
     width: 50%;
     float: left;
-    margin-right: $default-padding;
+    padding-right: $default-padding;
+    overflow: hidden;
+
+    .column {
+      width: 50%;
+      float: left;
+    }
   }
 
   #footer-social {
     width: 25%;
+    float: right;
+  }
+
+  #footer-note {
+    margin-top: $default-padding;
+    padding-top: $default-padding;
+    position: relative;
     float: left;
+    border-top: 1px solid rgba(darken($main-color-6, 20%), 0.3);
+    line-height: 1.5em;
+
+    .copyright {
+      color: darken($main-color-6, 20%);
+      padding-right: $default-padding;
+    }
   }
 }
