@@ -84,8 +84,29 @@ strong {
     position: relative;
     overflow: hidden;
 
+    // Mobile specific rules
+    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      width: 100%;
+      min-width: initial;
+      max-width: initial;
+      padding: $default-padding-mobile $default-padding-mobile;
+    }
+
+    // Mobile portrait only specific rules
+    @media (min-width: 481px) and (max-width: 768px) {
+    }
+
     &.padded {
       padding: $default-big-padding $default-padding;
+
+      // Mobile specific rules
+      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+        padding: $default-big-padding-mobile $default-big-padding-mobile;
+      }
+
+      // Mobile portrait only specific rules
+      @media (min-width: 481px) and (max-width: 768px) {
+      }
     }
 
     h1 {
@@ -265,13 +286,63 @@ strong {
       height: 60px;
       margin-top: -25px;
     }
+
+    // Mobile specific rules
+    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      height: auto;
+      float: right;
+      margin-right: 0;
+
+      img {
+        height: 50px;
+        margin-top: 0;
+      }
+    }
+
+    // Mobile portrait only specific rules
+    @media (min-width: 481px) and (max-width: 768px) {
+    }
   }
 
   #menu {
     float: left;
 
+    // Mobile specific rules
+    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      position: relative;
+
+      &::after {
+        color: $main-color-10;
+        position: absolute;
+        top: 5px;
+        font-family: 'boxicons', serif;
+        font-size: 3em;
+        content: '\edc2';
+      }
+    }
+
+    // Mobile portrait only specific rules
+    @media (min-width: 481px) and (max-width: 768px) {
+    }
+
     ul {
       overflow: hidden;
+
+      // Mobile specific rules
+      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        overflow-y: auto;
+      }
+
+      // Mobile portrait only specific rules
+      @media (min-width: 481px) and (max-width: 768px) {
+      }
 
       li {
         float: left;
@@ -315,6 +386,15 @@ strong {
   h3 {
     font-size: 2.5em;
     margin-bottom: $default-padding;
+
+    // Mobile specific rules
+    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      font-size: 2em;
+    }
+
+    // Mobile portrait only specific rules
+    @media (min-width: 481px) and (max-width: 768px) {
+    }
   }
 }
 
@@ -337,6 +417,17 @@ strong {
     float: left;
     padding-right: $default-padding;
 
+    // Mobile specific rules
+    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      width: auto;
+      float: none;
+      text-align: center;
+    }
+
+    // Mobile portrait only specific rules
+    @media (min-width: 481px) and (max-width: 768px) {
+    }
+
     img {
       width: 160px;
     }
@@ -348,15 +439,60 @@ strong {
     padding-right: $default-padding;
     overflow: hidden;
 
+    // Mobile specific rules
+    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      width: auto;
+      float: none;
+      padding-right: 0;
+      margin-top: $default-padding-mobile;
+    }
+
+    // Mobile portrait only specific rules
+    @media (min-width: 481px) and (max-width: 768px) {
+    }
+
     .column {
       width: 50%;
       float: left;
+
+      // Mobile specific rules
+      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+        &:last-child {
+          text-align: right;
+        }
+      }
+
+      // Mobile portrait only specific rules
+      @media (min-width: 481px) and (max-width: 768px) {
+      }
     }
   }
 
   #footer-social {
     width: 25%;
     float: right;
+
+    // Mobile specific rules
+    @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      width: auto;
+      float: none;
+      margin-top: $default-padding-mobile;
+
+      ul {
+        li {
+          display: inline-block;
+          margin-right: $default-padding-mobile;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    // Mobile portrait only specific rules
+    @media (min-width: 481px) and (max-width: 768px) {
+    }
   }
 
   #footer-note {
@@ -370,6 +506,16 @@ strong {
     .copyright {
       color: darken($main-color-6, 20%);
       padding-right: $default-padding;
+
+      // Mobile specific rules
+      @media (min-width: 280px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+        display: block;
+        margin-bottom: $default-padding-mobile;
+      }
+
+      // Mobile portrait only specific rules
+      @media (min-width: 481px) and (max-width: 768px) {
+      }
     }
   }
 }
