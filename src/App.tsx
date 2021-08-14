@@ -20,6 +20,7 @@ import Tecnologies from './components/Tecnologies'
 import OpenSource from './components/OpenSource'
 import News from './components/News'
 import About from './components/About'
+import Contacts from './components/Contacts'
 
 const base = '/:locale(en|it)?'
 
@@ -129,6 +130,7 @@ function App() {
             <Route exact path={`${base}/open-source`} component={OpenSource} />
             <Route exact path={`${base}/news`} component={News} />
             <Route exact path={`${base}/about`} component={About} />
+            <Route exact path={`${base}/contacts`} component={Contacts} />
             <Route exact path={`${base}/terms`} component={Terms} />
             <Route exact path={`${base}/privacy-policy`} component={Privacy} />
             <Route exact path={`${base}/404`} component={NotFound} />
