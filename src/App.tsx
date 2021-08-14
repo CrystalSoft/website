@@ -129,6 +129,7 @@ function App() {
             <Route exact path={`${base}/tecnologies`} component={Tecnologies} />
             <Route exact path={`${base}/open-source`} component={OpenSource} />
             <Route exact path={`${base}/news`} component={News} />
+            <Route exact path={`${base}/News/:newsSlug`} component={News} />
             <Route exact path={`${base}/about`} component={About} />
             <Route exact path={`${base}/contacts`} component={Contacts} />
             <Route exact path={`${base}/terms`} component={Terms} />

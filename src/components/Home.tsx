@@ -41,7 +41,7 @@ const Home = () => {
                 <img src={logo} />
                 <h3>{t('home.promo.posso_partire_title')}</h3>
                 <p>{t('home.promo.posso_partire_description')}</p>
-                <Link to={'/products/posso-partire'} className={'button light'}>
+                <Link to={'/news/posso-partire'} className={'button light'}>
                   {t('label.discover_more')} <i className='bx-fw bx bxs-right-arrow-square' />
                 </Link>
               </div>
@@ -51,7 +51,7 @@ const Home = () => {
         <div className={'inner padded'}>
           <div id={'home-intro'}>
             <h4>{t('home.label.intro')}</h4>
-            <div className={'box'}>
+            <div className={'box hoverable light'}>
               <div className={'icon main-color-2 darker'}>
                 <i className='bx bx-cloud-download' />
               </div>
@@ -60,7 +60,7 @@ const Home = () => {
                 <span>{t('home.label.freeware_description')}</span>
               </div>
             </div>
-            <div className={'box'}>
+            <div className={'box hoverable light'}>
               <div className={'icon main-color-1 darker'}>
                 <i className='bx bxl-html5' />
               </div>
@@ -69,7 +69,7 @@ const Home = () => {
                 <span>{t('home.label.web_description')}</span>
               </div>
             </div>
-            <div className={'box'}>
+            <div className={'box hoverable light'}>
               <div className={'icon main-color-9 darker'}>
                 <i className='bx bx-mobile' />
               </div>
@@ -83,16 +83,25 @@ const Home = () => {
         <div id={'home-show-case'}>
           <div className={'inner padded'}>
             <h4>{t('home.label.explore_products')}</h4>
-            <p>
-              Aenean gravida tortor eros, at condimentum velit viverra eu. Nunc et justo accumsan, feugiat enim a, eleifend sapien. Cras ut
-              laoreet tellus. Integer mi ligula, fringilla quis placerat sed, fringilla quis justo. Nulla facilisi. Donec blandit vulputate
-              nulla, et egestas nulla lacinia vitae. Curabitur et neque lorem. Pellentesque porttitor eros consequat, sagittis enim vitae,
-              aliquet elit. Donec vitae condimentum sapien, laoreet ullamcorper justo. In sit amet dui mollis, elementum mauris ac,
-              hendrerit tellus. Proin in orci sed magna sodales porttitor scelerisque nec turpis. Phasellus molestie felis consequat,
-              hendrerit felis et, pharetra urna. Donec bibendum erat vitae mi ullamcorper, eu consectetur lectus cursus. Fusce a leo
-              gravida, laoreet risus vitae, feugiat turpis. Donec luctus gravida nisi.
-            </p>
-            <Link to={'/about'} className={'button'}>
+            <div id={'home-products'}>
+              <div className={'product hoverable'}>
+                <Link to={'/products/posso-partire'} className={'button light'} />
+                <div className={'image posso-partire'} />
+                <div className={'description'}>
+                  <h5>Posso partire?</h5>
+                  <p>{t('home.products.posso_partire.description')}</p>
+                </div>
+              </div>
+              <div className={'product hoverable'}>
+                <Link to={'/products/compact-web-document'} className={'button light'} />
+                <div className={'image compact-web-document'} />
+                <div className={'description'}>
+                  <h5>Compact Web Document</h5>
+                  <p>{t('home.products.compact_web_document.description')}</p>
+                </div>
+              </div>
+            </div>
+            <Link to={'/products'} className={'button'}>
               {t('label.explore')}
             </Link>
           </div>
@@ -106,16 +115,43 @@ const Home = () => {
         <div id={'home-news'}>
           <div className={'inner padded'}>
             <h4>{t('home.label.news')}</h4>
-            <p>
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam accumsan elit et tellus consequat
-              vehicula vel ac libero. Maecenas tortor diam, egestas vitae lorem ac, tempor sodales urna. Suspendisse lectus nulla, viverra
-              eu ipsum vitae, iaculis rutrum dolor. Donec faucibus consequat purus eu ornare. Ut velit augue, pulvinar nec risus laoreet,
-              lobortis dictum sapien. Pellentesque rhoncus sollicitudin augue, non molestie nulla. Aenean suscipit nisi quis leo viverra
-              blandit. Pellentesque erat nisi, semper et purus id, molestie feugiat tellus. Fusce sed facilisis nunc. Mauris sagittis, mi
-              non porta pretium, massa tortor ultricies ex, faucibus pulvinar mi massa sit amet turpis. Nam condimentum vitae urna eget
-              semper. Donec posuere lectus neque, sollicitudin varius ante finibus vel.
-            </p>
-            <Link to={'/about'} className={'button'}>
+            <div id={'home-news'}>
+              <div className={'news hoverable'}>
+                <Link to={'/news/posso-partire'} className={'button light'} />
+                <div className={'image posso-partire'} />
+                <div className={'description'}>
+                  <h5>Posso partire?</h5>
+                  <p>{t('home.news.posso_partire.description')}</p>
+                </div>
+              </div>
+              <div className={'news hoverable'}>
+                <Link to={'/news/compact-web-document'} className={'button light'} />
+                <div className={'image compact-web-document'} />
+                <div className={'description'}>
+                  <h5>Compact Web Document</h5>
+                  <p>{t('home.news.compact_web_document.description')}</p>
+                </div>
+              </div>
+            </div>
+            <div id={'home-news'}>
+              <div className={'news hoverable'}>
+                <Link to={'/news/crazy-cricket'} className={'button light'} />
+                <div className={'image crazy-cricket'} />
+                <div className={'description'}>
+                  <h5>Crazy Cricket</h5>
+                  <p>{t('home.news.crazy_cricket.description')}</p>
+                </div>
+              </div>
+              <div className={'news hoverable'}>
+                <Link to={'/news/risposta-sbagliata'} className={'button light'} />
+                <div className={'image risposta-sbagliata'} />
+                <div className={'description'}>
+                  <h5>Risposta Sbagliata!</h5>
+                  <p>{t('home.news.risposta_sbagliata.description')}</p>
+                </div>
+              </div>
+            </div>
+            <Link to={'/news'} className={'button'}>
               {t('label.news')}
             </Link>
           </div>

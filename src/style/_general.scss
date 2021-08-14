@@ -151,6 +151,27 @@ strong {
   }
 }
 
+.hoverable {
+    background-color: white;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+  &.light {
+    box-shadow: none;
+    transition: transform 0.6s ease-out;
+    cursor: default;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
 .main-color-0 {
   color: $main-color-0;
 

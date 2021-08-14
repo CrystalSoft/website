@@ -35,5 +35,11 @@
   "home.label.main": "Abbiamo iniziato a sviluppare software nel 2005 creando programmi per Windows con il linguaggio di programmazione C++.",
   "home.label.main_2": "Nel corso degli anni abbiamo portato lo sviluppo anche su altri Sistemi Operativi come Linux e da quel momento, quando creiamo un Software, lo pensiamo per tutte le piattaforme possibili, creando quindi Software Cross-Platform.",
   "home.label.explore_products": "Esplora gli ultimi progetti",
-  "home.label.news": "Leggi le nostre ultime notizie"
+  "home.label.news": "Leggi le nostre ultime notizie",
+  "home.products.posso_partire.description": "È un servizio pensato e creato per aiutare le persone che vogliono viaggiare all'estero ma che trovano difficile capire in quale paese possono o meno spostarsi. L'emergenza pandemica Covid-19 ha messo tutti a dura prova ed è sempre più difficile capire dove si può viaggiare per turismo.",
+  "home.products.compact_web_document.description": "Il formato CWD è un nuovo e potente documento multimediale che permette la visualizzazione di contenuti come immagini, video, audio, mappe e ovviamente, il testo. Con CWD potrai facilmente creare i tuoi documenti con HTML, CSS e JavaScript e il risultato sarà un file compresso e portabile, leggibile con un CWD Reader.",
+  "home.news.posso_partire.description": "Durante la pandemia da Covid-19 è davvero difficile capire dove si può viaggiare per turismo, ti aiutiamo noi.",
+  "home.news.compact_web_document.description": "Compact Web Document acronimo di CWD, è un innovativo formato di documento costruito per una visualizzazione pixel perfect in tutte le piattaforme possibili.",
+  "home.news.crazy_cricket.description": "Il gioco più addictive degli ultimi tempi è arrivato sul Play Store. Salta da un blocco di terra ad un altro e ottieni il punteggio più alto di tutti!",
+  "home.news.risposta_sbagliata.description": "Con Risposta Sbagliata! dovrai rispondere in modo sbagliato alla domanda che ti viene chiesta!"
 }
