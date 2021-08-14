@@ -14,7 +14,7 @@ const NotFound = () => {
         </Helmet>
         <div id={'not-found'} className={'container'}>
           <div className={'inner'}>
-            <i className='bx bxs-alarm-exclamation' /> Pagina in costruzione.
+            <i className='bx bxs-error' /> Pagina in costruzione.
           </div>
         </div>
       </>

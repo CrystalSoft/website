@@ -4,7 +4,9 @@ import detector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
 i18n.on('languageChanged', function (lng) {
-  if (!window.location.pathname.includes('/' + lng)) {
+  i18n.languages = ['it', 'en']
+
+  if (window.location.pathname == '/') {
     window.location.replace(lng + window.location.pathname)
   }
 })
@@ -43,7 +45,5 @@ i18n
     },
     initImmediate: false
   })
-
-i18n.languages = ['it', 'en']
 
 export default i18n

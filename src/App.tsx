@@ -12,6 +12,8 @@ import Home from './components/Home'
 import NotFound from './components/NotFound'
 import Products from './components/Products'
 import ChangeLanguage from './components/Utils/ChangeLanguage'
+import Terms from './components/Terms'
+import Privacy from './components/Privacy'
 
 const base = '/:locale(en|it)?'
 
@@ -104,7 +106,10 @@ function App() {
         <div id={'body'} className={'container'}>
           <Switch>
             <Route exact path={base} component={Home} />
-            <Route path={`${base}/products`} component={Products} />
+            <Route exact path={`${base}/products`} component={Products} />
+            <Route exact path={`${base}/products/:productName`} component={Products} />
+            <Route exact path={`${base}/terms`} component={Terms} />
+            <Route exact path={`${base}/privacy-policy`} component={Privacy} />
             <Route exact path='*' component={NotFound} />
           </Switch>
         </div>

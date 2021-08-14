@@ -1,11 +1,18 @@
 import { useTranslation } from 'react-i18next'
-import React from 'react'
+import React, { UIEvent } from 'react'
 
 const ChangeLanguage = () => {
   const { ready, i18n } = useTranslation()
 
-  const changeLanguage = (lng: string) => {
+  const changeLanguage = (e: UIEvent, lng: string) => {
     i18n.changeLanguage(lng)
+
+    e.stopPropagation()
+    e.preventDefault()
+
+    console.log(lng)
+
+    return false
   }
 
   return (
@@ -17,7 +24,7 @@ const ChangeLanguage = () => {
         {ready &&
           i18n.languages.map((lng: string) => (
             <li key={lng}>
-              <a href={'/' + lng} onClick={() => changeLanguage(lng)}>
+              <a href={'/' + lng + '/'} onClick={(e) => changeLanguage(e, lng)}>
                 {lng}
               </a>
             </li>

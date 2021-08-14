@@ -8,6 +8,8 @@ import { Link } from 'react-router-i18n'
 import MyLoader from './Utils/Loader'
 import Waves from './Waves'
 
+import logo from '../images/promo.png'
+
 const Home = () => {
   const { t, ready } = useTranslation()
 
@@ -29,6 +31,7 @@ const Home = () => {
             </div>
             <div id={'promo-right'}>
               <div id={'promo-box'}>
+                <img src={logo} />
                 <h3>{t('home.promo.posso_partire_title')}</h3>
                 <p>{t('home.promo.posso_partire_description')}</p>
                 <Link to={'/products/posso-partire'} className={'button light'}>

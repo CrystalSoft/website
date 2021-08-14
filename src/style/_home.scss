@@ -32,13 +32,17 @@ h3 {
 
     #promo-box {
       background-color: white;
-      background-image: url('../images/promo.png');
-      background-size: 100%;
-      background-repeat: no-repeat;
       width: 100%;
-      min-height: 500px;
-      padding: 310px $default-padding $default-padding;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      min-height: 450px;
+      padding: $default-padding $default-padding $default-padding;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: calc(100% + #{$default-padding * 2});
+        margin-top: -$default-padding;
+        margin-left: -$default-padding;
+        margin-bottom: $default-padding;
+      }
     }
   }
 }

@@ -1,14 +1,19 @@
 {
   "site.title": "CrystalSoft",
+  "site.separator": " - ",
   "menu.products": "Prodotti",
   "menu.tecnologies": "Tecnologie",
   "menu.open_source": "Open Source",
   "menu.news": "News",
   "menu.about": "Chi siamo",
+  "menu.contacts": "Contatti",
+  "menu.terms": "Termini e Condizioni",
+  "menu.privacy": "Privacy Policy",
+  "label.disclaimer": "Il Software è fornito \"cosi com'è\" e senza alcuna Garanzia. Si declina quindi qualsiasi danno morale o immorale, danno diretto e/o indiretto, provocato dal nostro Software.",
   "label.header": "Siamo molto di più che un'azienda che produce software.",
   "label.discover_more": "Scopri di più",
   "home.label.promo": "Performance. Qualità. Professionalità.",
-  "home.label.promo_long": "For years, we dedicated our focus to the creation of freeware software and websites, starting from Microsoft ® Windows ® and approaching Google Android.",
-  "home.promo.posso_partire_title": "New website created to help italian travelers",
-  "home.promo.posso_partire_description": "During the Covid-19 pandemic is actually very hard finding where italian travelers could go, with this service we help people understanding it."
+  "home.label.promo_long": "Da anni, ci dedichiamo alla creazione di sofware gratuiti e siti web, partendo da Microsoft ® Windows ® e poi approcciando anche Google Android.",
+  "home.promo.posso_partire_title": "Nuovo sito web per aiutare i viaggiatori italiani",
+  "home.promo.posso_partire_description": "Durante la pandemia da Covid-19 è davvero difficile capire dove si può viaggiare per turismo, con questo servizio aiutiamo le persone a capirlo."
 }
