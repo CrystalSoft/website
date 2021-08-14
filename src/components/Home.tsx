@@ -52,7 +52,7 @@ const Home = () => {
           <div id={'home-intro'}>
             <h4>{t('home.label.intro')}</h4>
             <div className={'box'}>
-              <div className={'icon'}>
+              <div className={'icon main-color-2 darker'}>
                 <i className='bx bx-cloud-download' />
               </div>
               <div className={'description'}>
@@ -61,7 +61,7 @@ const Home = () => {
               </div>
             </div>
             <div className={'box'}>
-              <div className={'icon'}>
+              <div className={'icon main-color-1 darker'}>
                 <i className='bx bxl-html5' />
               </div>
               <div className={'description'}>
@@ -70,7 +70,7 @@ const Home = () => {
               </div>
             </div>
             <div className={'box'}>
-              <div className={'icon'}>
+              <div className={'icon main-color-9 darker'}>
                 <i className='bx bx-mobile' />
               </div>
               <div className={'description'}>

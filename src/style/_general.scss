@@ -127,6 +127,94 @@ strong {
   }
 }
 
+.main-color-0 {
+  color: $main-color-0;
+
+  &.darker {
+    color: darken($main-color-0, 10%);
+  }
+}
+
+.main-color-1 {
+  color: $main-color-1;
+
+  &.darker {
+    color: darken($main-color-1, 10%);
+  }
+}
+
+.main-color-2 {
+  color: $main-color-2;
+
+  &.darker {
+    color: darken($main-color-2, 10%);
+  }
+}
+
+.main-color-3 {
+  color: $main-color-3;
+
+  &.darker {
+    color: darken($main-color-3, 10%);
+  }
+}
+
+.main-color-4 {
+  color: $main-color-4;
+
+  &.darker {
+    color: darken($main-color-4, 10%);
+  }
+}
+
+.main-color-5 {
+  color: $main-color-5;
+
+  &.darker {
+    color: darken($main-color-5, 10%);
+  }
+}
+
+.main-color-6 {
+  color: $main-color-6;
+
+  &.darker {
+    color: darken($main-color-6, 10%);
+  }
+}
+
+.main-color-7 {
+  color: $main-color-7;
+
+  &.darker {
+    color: darken($main-color-7, 10%);
+  }
+}
+
+.main-color-8 {
+  color: $main-color-8;
+
+  &.darker {
+    color: darken($main-color-8, 10%);
+  }
+}
+
+.main-color-9 {
+  color: $main-color-9;
+
+  &.darker {
+    color: darken($main-color-9, 10%);
+  }
+}
+
+.main-color-10 {
+  color: $main-color-10;
+
+  &.darker {
+    color: darken($main-color-10, 10%);
+  }
+}
+
 #pre-header {
   background-color: lighten($main-color-3, 15%);
 
