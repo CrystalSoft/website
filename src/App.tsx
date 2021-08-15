@@ -193,7 +193,7 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a href={'http://www.linkedin.com/profile/view?id=154451211'} target={'_blank'} rel='noreferrer'>
+                  <a href={'https://www.linkedin.com/company/crystalsoft-italia'} target={'_blank'} rel='noreferrer'>
                     <i className='bx-fw bx bxl-facebook-square' /> LinkedIn
                   </a>
                 </li>
