@@ -3,8 +3,6 @@ version: '3.8'
 services:
   client:
     build: ./.docker/images/client
-    hostname: cs-client
-    container_name: cs-client
     working_dir: /home/crystalsoft
     volumes:
       - ./:/home/crystalsoft:delegated
@@ -12,17 +10,16 @@ services:
     env_file: .env
     restart: always
     expose:
-      - $CS_FE_PORT
+      - ${CS_FE_PORT}
 
   nginx:
     build: ./.docker/images/web
-    container_name: cs-client-nginx
     volumes:
       - ./.config/nginx/nginx.conf:/etc/nginx/conf.d/crystalsoft.conf
     env_file: .env
     ports:
-      - $CS_FE_PUBLIC_PORT:8080
-      - $CS_FE_PUBLIC_SSL_PORT:4443
+      - ${CS_FE_PUBLIC_PORT}:8080
+      - ${CS_FE_PUBLIC_SSL_PORT}:4443
     restart: always
     depends_on:
       - client

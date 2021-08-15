@@ -4,6 +4,7 @@
 
 # dependencies
 /node_modules
+/node_modules-docker
 /.pnp
 .pnp.js
 
