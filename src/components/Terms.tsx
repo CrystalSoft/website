@@ -16,7 +16,7 @@ const Terms = () => {
         <Helmet>
           <title>{t('menu.terms') + t('site.separator') + t('site.title')}</title>
         </Helmet>
-        <div id={'terms'} className={'container'}>
+        <div id={'terms'}>
           <div className={'inner'}>
             <p>
               <h1>{t('menu.terms')}</h1>

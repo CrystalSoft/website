@@ -43,7 +43,7 @@ const Products = () => {
         <Helmet>
           <title>{t('menu.products') + t('site.separator') + t('site.title')}</title>
         </Helmet>
-        <div id={'product-list'} className={'container'}>
+        <div id={'product-list'}>
           {product === null && (
             <div className={'inner'}>
               <i className='bx bxs-error' /> {t('label.working')}

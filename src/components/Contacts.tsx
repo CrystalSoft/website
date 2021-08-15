@@ -12,9 +12,9 @@ const Contacts = () => {
     return (
       <>
         <Helmet>
-          <title>{t('site.title')}</title>
+          <title>{t('menu.contacts') + t('site.separator') + t('site.title')}</title>
         </Helmet>
-        <div id={'contacts'} className={'container'}>
+        <div id={'contacts'}>
           <div className={'inner'}>
             <i className='bx bxs-error' /> {t('label.working')}
           </div>

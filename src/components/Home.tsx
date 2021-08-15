@@ -19,7 +19,7 @@ const Home = () => {
         <Helmet>
           <title>{t('home.site.title')}</title>
         </Helmet>
-        <div id={'sub-header'} className={'container'}>
+        <div id={'sub-header'}>
           <div className={'inner'}>
             <h2>
               <i className='bx-fw bx bxs-city' /> {t('label.header')}
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className={'inner padded'}>
+        <div className={'inner big-content padded'}>
           <div id={'home-intro'}>
             <h4>{t('home.label.intro')}</h4>
             <div className={'box hoverable light'}>
@@ -81,7 +81,7 @@ const Home = () => {
           </div>
         </div>
         <div id={'home-show-case'}>
-          <div className={'inner padded'}>
+          <div className={'inner padded big-content'}>
             <h4>{t('home.label.explore_products')}</h4>
             <div id={'home-products'}>
               <div className={'product hoverable'}>
@@ -113,7 +113,7 @@ const Home = () => {
           </div>
         </div>
         <div id={'home-news'}>
-          <div className={'inner padded'}>
+          <div className={'inner padded big-content'}>
             <h4>{t('home.label.news')}</h4>
             <div id={'home-news'}>
               <div className={'news hoverable'}>

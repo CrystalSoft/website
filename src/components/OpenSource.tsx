@@ -12,9 +12,9 @@ const OpenSource = () => {
     return (
       <>
         <Helmet>
-          <title>{t('site.title')}</title>
+          <title>{t('menu.open_source') + t('site.separator') + t('site.title')}</title>
         </Helmet>
-        <div id={'open-source'} className={'container'}>
+        <div id={'open-source'}>
           <div className={'inner'}>
             <i className='bx bxs-error' /> {t('label.working')}
           </div>

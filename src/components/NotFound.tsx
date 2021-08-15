@@ -14,7 +14,7 @@ const NotFound = () => {
         <Helmet>
           <title>{t('site.title')}</title>
         </Helmet>
-        <div id={'not-found'} className={'container'}>
+        <div id={'not-found'}>
           <div className={'inner'}>
             <i className='bx bxs-error' /> {t('label.not_found')}
           </div>

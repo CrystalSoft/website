@@ -14,7 +14,7 @@ const Privacy = () => {
         <Helmet>
           <title>{t('menu.privacy') + t('site.separator') + t('site.title')}</title>
         </Helmet>
-        <div id={'privacy'} className={'container'}>
+        <div id={'privacy'}>
           <div className={'inner'}>
             <h1>{t('menu.privacy')}</h1>
             <p>

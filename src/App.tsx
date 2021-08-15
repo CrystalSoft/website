@@ -16,8 +16,6 @@ import ChangeLanguage from './components/utils/ChangeLanguage'
 import Terms from './components/Terms'
 import Privacy from './components/Privacy'
 import CookieConsent from 'react-cookie-consent'
-import Tecnologies from './components/Tecnologies'
-import OpenSource from './components/OpenSource'
 import News from './components/News'
 import About from './components/About'
 import Contacts from './components/Contacts'
@@ -80,26 +78,6 @@ function App() {
                     <Route
                       path={base}
                       render={() => (
-                        <NavLink exact to={'/tecnologies'}>
-                          {t('menu.tecnologies')}
-                        </NavLink>
-                      )}
-                    />
-                  </li>
-                  <li>
-                    <Route
-                      path={base}
-                      render={() => (
-                        <NavLink exact to={'/open-source'}>
-                          {t('menu.open_source')}
-                        </NavLink>
-                      )}
-                    />
-                  </li>
-                  <li>
-                    <Route
-                      path={base}
-                      render={() => (
                         <NavLink exact to={'/news'}>
                           {t('menu.news')}
                         </NavLink>
@@ -126,8 +104,6 @@ function App() {
             <Route exact path={base} component={Home} />
             <Route exact path={`${base}/products`} component={Products} />
             <Route exact path={`${base}/products/:productName`} component={Products} />
-            <Route exact path={`${base}/tecnologies`} component={Tecnologies} />
-            <Route exact path={`${base}/open-source`} component={OpenSource} />
             <Route exact path={`${base}/news`} component={News} />
             <Route exact path={`${base}/News/:newsSlug`} component={News} />
             <Route exact path={`${base}/about`} component={About} />
@@ -139,8 +115,8 @@ function App() {
           </Switch>
         </div>
         <div id={'pre-footer'} className={'container'}>
-          <div className={'inner padded'}>
-            <h3>{t('label.more_info')}</h3>
+          <div className={'inner padded big-content'}>
+            <h4>{t('label.more_info')}</h4>
             <Route
               path={base}
               render={() => (

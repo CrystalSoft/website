@@ -26,9 +26,9 @@ const News = () => {
     return (
       <>
         <Helmet>
-          <title>{t('menu.products') + t('site.separator') + t('site.title')}</title>
+          <title>{t('menu.news') + t('site.separator') + t('site.title')}</title>
         </Helmet>
-        <div id={'news-list'} className={'container'}>
+        <div id={'news-list'}>
           {news === null && (
             <div className={'inner'}>
               <i className='bx bxs-error' /> {t('label.working')}

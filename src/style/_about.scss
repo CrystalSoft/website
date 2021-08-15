@@ -1,0 +1,42 @@
+#about-main {
+  background-color: darken($main-color-3, 50%);
+  color: white;
+}
+
+#about-technologies {
+  background-color: $main-color-0;
+}
+
+#about-what-we-do {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+
+  .box {
+    flex: 0 0 calc(33.29% - #{$default-padding * 2});
+    margin-left: $default-padding;
+    margin-right: $default-padding;
+    margin-top: $default-big-padding;
+    text-align: center;
+
+    // Mobile specific rules
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      flex: 1 0 100%;
+      margin-top: $default-padding-mobile;
+      margin-left: 0;
+      margin-right: 0;
+      padding: $default-padding-mobile;
+    }
+
+    .icon {
+      font-size: 8em;
+    }
+
+    .description {
+      strong {
+        display: block;
+        margin-bottom: $default-padding-3;
+      }
+    }
+  }
+}
