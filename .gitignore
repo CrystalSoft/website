@@ -13,6 +13,7 @@
 
 # production
 /build
+/build-docker
 
 # misc
 .DS_Store
