@@ -217,6 +217,16 @@ function App() {
                     <i className='bx-fw bx bxl-youtube' /> YouTube
                   </a>
                 </li>
+                <li>
+                  <a href={'https://www.instagram.com/crystalsoft_it/'} target={'_blank'} rel='noreferrer'>
+                    <i className='bx-fw bx bxl-instagram' /> Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href={'https://twitter.com/CrystalSoftIT'} target={'_blank'} rel='noreferrer'>
+                    <i className='bx-fw bx bxl-twitter' /> Twitter
+                  </a>
+                </li>
               </ul>
             </div>
             <div id={'footer-note'}>
