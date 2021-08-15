@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import MyLoader from '../utils/Loader'
 
 import possoPartire from '../../images/products/posso-partire.png'
+import Breadcrumb from '../utils/Breadcrumb'
 
 const PossoPartire = () => {
   const { t, ready } = useTranslation()
@@ -16,6 +17,14 @@ const PossoPartire = () => {
         <Helmet>
           <title>{'Posso partire?' + t('site.separator') + t('site.title')}</title>
         </Helmet>
+        <Breadcrumb
+          values={
+            new Map([
+              ['news', t('menu.news')],
+              ['posso-partire', 'Posso partire?']
+            ])
+          }
+        />
         <div id={'news'}>
           <div id={'promo'}>
             <div className={'inner padded'}>

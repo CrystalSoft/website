@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 
 import MyLoader from './utils/Loader'
+import Breadcrumb from './utils/Breadcrumb'
 
 const Terms = () => {
   const { t, ready } = useTranslation()
@@ -16,6 +17,7 @@ const Terms = () => {
         <Helmet>
           <title>{t('menu.terms') + t('site.separator') + t('site.title')}</title>
         </Helmet>
+        <Breadcrumb values={new Map([['terms', t('menu.terms')]])} />
         <div id={'terms'}>
           <div className={'inner'}>
             <p>

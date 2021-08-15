@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import MyLoader from '../utils/Loader'
 
 import compactWebDocument from '../../images/products/compact-web-document.png'
+import Breadcrumb from '../utils/Breadcrumb'
 
 const CompactWebDocument = () => {
   const { t, ready } = useTranslation()
@@ -14,8 +15,16 @@ const CompactWebDocument = () => {
     return (
       <>
         <Helmet>
-          <title>{'Posso partire?' + t('site.separator') + t('site.title')}</title>
+          <title>{'Compact Web Document' + t('site.separator') + t('site.title')}</title>
         </Helmet>
+        <Breadcrumb
+          values={
+            new Map([
+              ['news', t('menu.news')],
+              ['compact-web-document', 'Compact Web Document']
+            ])
+          }
+        />
         <div id={'news'}>
           <div id={'promo'}>
             <div className={'inner padded'}>

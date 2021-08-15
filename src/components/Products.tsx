@@ -9,6 +9,7 @@ import MyLoader from './utils/Loader'
 // import PossoPartire from './products/PossoPartire'
 import PossoPartire from './news/PossoPartire'
 import CompactWebDocument from './news/CompactWebDocument'
+import Breadcrumb from './utils/Breadcrumb'
 
 const Products = () => {
   const { t, ready } = useTranslation()
@@ -52,6 +53,7 @@ const Products = () => {
         <Helmet>
           <title>{t('menu.products') + t('site.separator') + t('site.title')}</title>
         </Helmet>
+        {product === null && <Breadcrumb values={new Map([['products', t('menu.products')]])} />}
         <div id={'product-list'}>
           {product === null && (
             <div className={'inner'}>

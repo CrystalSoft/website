@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 
 import MyLoader from './utils/Loader'
 import Waves from './utils/Waves'
+import Breadcrumb from './utils/Breadcrumb'
 
 const About = () => {
   const { t, ready } = useTranslation()
@@ -15,6 +16,7 @@ const About = () => {
         <Helmet>
           <title>{t('menu.about') + t('site.separator') + t('site.title')}</title>
         </Helmet>
+        <Breadcrumb values={new Map([['about', t('menu.about')]])} />
         <div id={'about'}>
           <div id={'promo'}>
             <Waves />

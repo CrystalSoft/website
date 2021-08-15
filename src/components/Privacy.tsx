@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 
 import MyLoader from './utils/Loader'
+import Breadcrumb from './utils/Breadcrumb'
 
 const Privacy = () => {
   const { t, ready } = useTranslation()
@@ -14,6 +15,7 @@ const Privacy = () => {
         <Helmet>
           <title>{t('menu.privacy') + t('site.separator') + t('site.title')}</title>
         </Helmet>
+        <Breadcrumb values={new Map([['privacy-policy', t('menu.privacy')]])} />
         <div id={'privacy'}>
           <div className={'inner'}>
             <h1>{t('menu.privacy')}</h1>

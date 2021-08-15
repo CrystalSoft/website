@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 
 import MyLoader from './utils/Loader'
+import Breadcrumb from './utils/Breadcrumb'
 
 const Contacts = () => {
   const { t, ready } = useTranslation()
@@ -14,6 +15,7 @@ const Contacts = () => {
         <Helmet>
           <title>{t('menu.contacts') + t('site.separator') + t('site.title')}</title>
         </Helmet>
+        <Breadcrumb values={new Map([['contacts', t('menu.contacts')]])} />
         <div id={'contacts'}>
           <div className={'inner'}>
             <i className='bx bxs-error' /> {t('label.working')}
