@@ -17,6 +17,9 @@ const Contacts = () => {
         <div id={'contacts'}>
           <div className={'inner'}>
             <i className='bx bxs-error' /> {t('label.working')}
+            <br />
+            <br />
+            <p>{t('contacts.label.email')}</p>
           </div>
         </div>
       </>

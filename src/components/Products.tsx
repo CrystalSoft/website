@@ -5,7 +5,10 @@ import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 
 import MyLoader from './utils/Loader'
-import PossoPartire from './products/PossoPartire'
+
+// import PossoPartire from './products/PossoPartire'
+import PossoPartire from './news/PossoPartire'
+import CompactWebDocument from './news/CompactWebDocument'
 
 const Products = () => {
   const { t, ready } = useTranslation()
@@ -15,23 +18,29 @@ const Products = () => {
     let product: any = null
     if (productName !== undefined) {
       switch (productName) {
+        // case 'posso-partire':
+        //   product = <PossoPartire />
+        //   break
+        // case 'compact-web-document':
+        //   product = <PossoPartire />
+        //   break
+        // case 'crazy-cricket':
+        //   product = <PossoPartire />
+        //   break
+        // case 'risposta-sbagliata':
+        //   product = <PossoPartire />
+        //   break
+        // case 'win-refine':
+        //   product = <PossoPartire />
+        //   break
+        // case 'wpcc-winmx-professional-chat-client':
+        //   product = <PossoPartire />
+        //   break
         case 'posso-partire':
           product = <PossoPartire />
           break
         case 'compact-web-document':
-          product = <PossoPartire />
-          break
-        case 'crazy-cricket':
-          product = <PossoPartire />
-          break
-        case 'risposta-sbagliata':
-          product = <PossoPartire />
-          break
-        case 'win-refine':
-          product = <PossoPartire />
-          break
-        case 'wpcc-winmx-professional-chat-client':
-          product = <PossoPartire />
+          product = <CompactWebDocument />
           break
         default:
           product = null

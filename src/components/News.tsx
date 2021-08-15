@@ -5,7 +5,8 @@ import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 
 import MyLoader from './utils/Loader'
-import PossoPartire from './products/PossoPartire'
+import PossoPartire from './news/PossoPartire'
+import CompactWebDocument from './news/CompactWebDocument'
 
 const News = () => {
   const { t, ready } = useTranslation()
@@ -17,6 +18,9 @@ const News = () => {
       switch (newsSlug) {
         case 'posso-partire':
           news = <PossoPartire />
+          break
+        case 'compact-web-document':
+          news = <CompactWebDocument />
           break
         default:
           news = null
