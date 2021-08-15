@@ -70,6 +70,18 @@ strong {
   position: sticky;
   z-index: 1;
   overflow: hidden;
+
+  // Mobile specific rules
+  @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    width: auto;
+    position: relative;
+  }
+
+  // Tablet and big phones
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
+    width: auto;
+    position: relative;
+  }
 }
 
 .container {
