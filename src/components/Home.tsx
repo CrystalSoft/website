@@ -9,6 +9,7 @@ import MyLoader from './utils/Loader'
 import Waves from './utils/Waves'
 
 import logo from '../images/promo.png'
+import Breadcrumb from './utils/Breadcrumb'
 
 const Home = () => {
   const { t, ready } = useTranslation()
@@ -22,6 +23,7 @@ const Home = () => {
           <meta content={t('home.label.promo') + ' ' + t('home.label.promo_long')} name='description' />
           <meta property='og:description' content={t('home.label.promo') + ' ' + t('home.label.promo_long')} />
         </Helmet>
+        <Breadcrumb values={new Map([['', t('menu.home')]])} />
         <div id={'sub-header'}>
           <div className={'inner'}>
             <h2>
