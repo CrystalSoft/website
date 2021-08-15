@@ -14,6 +14,9 @@ const NotFound = () => {
       <>
         <Helmet>
           <title>{t('site.title')}</title>
+          <meta property='og:title' content={t('site.title')} />
+          <meta content={t('home.label.promo') + ' ' + t('home.label.promo_long')} name='description' />
+          <meta property='og:description' content={t('home.label.promo') + ' ' + t('home.label.promo_long')} />
         </Helmet>
         <Breadcrumb values={new Map([['404', '404 Not Found']])} />
         <div id={'not-found'}>

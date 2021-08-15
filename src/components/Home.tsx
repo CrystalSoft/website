@@ -18,6 +18,9 @@ const Home = () => {
       <div id={'home'}>
         <Helmet>
           <title>{t('home.site.title')}</title>
+          <meta property='og:title' content={t('home.site.title')} />
+          <meta content={t('home.label.promo') + ' ' + t('home.label.promo_long')} name='description' />
+          <meta property='og:description' content={t('home.label.promo') + ' ' + t('home.label.promo_long')} />
         </Helmet>
         <div id={'sub-header'}>
           <div className={'inner'}>

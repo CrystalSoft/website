@@ -16,6 +16,9 @@ const PossoPartire = () => {
       <>
         <Helmet>
           <title>{'Posso partire?' + t('site.separator') + t('site.title')}</title>
+          <meta property='og:title' content={'Posso partire?' + t('site.separator') + t('site.title')} />
+          <meta content={t('news.posso_partire.label.promo') + ' ' + t('news.posso_partire.label.promo_long')} name='description' />
+          <meta property='og:description' content={t('news.posso_partire.label.promo') + ' ' + t('news.posso_partire.label.promo_long')} />
         </Helmet>
         <Breadcrumb
           values={

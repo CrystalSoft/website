@@ -14,6 +14,9 @@ const Privacy = () => {
       <>
         <Helmet>
           <title>{t('menu.privacy') + t('site.separator') + t('site.title')}</title>
+          <meta property='og:title' content={t('menu.privacy') + t('site.separator') + t('site.title')} />
+          <meta content={t('home.label.promo') + ' ' + t('home.label.promo_long')} name='description' />
+          <meta property='og:description' content={t('home.label.promo') + ' ' + t('home.label.promo_long')} />
         </Helmet>
         <Breadcrumb values={new Map([['privacy-policy', t('menu.privacy')]])} />
         <div id={'privacy'}>

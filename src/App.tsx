@@ -188,7 +188,7 @@ function App() {
             <div id={'footer-social'}>
               <ul>
                 <li>
-                  <a href={'https://t.me/CrystalSoftItalia'} target={'_blank'} rel='noreferrer'>
+                  <a href={'https://t.me/CrystalSoft_it'} target={'_blank'} rel='noreferrer'>
                     <i className='bx-fw bx bxl-telegram' /> Telegram
                   </a>
                 </li>

@@ -52,6 +52,9 @@ const Products = () => {
       <>
         <Helmet>
           <title>{t('menu.products') + t('site.separator') + t('site.title')}</title>
+          <meta property='og:title' content={t('menu.about') + t('site.separator') + t('site.title')} />
+          <meta content={t('home.label.promo') + ' ' + t('home.label.promo_long')} name='description' />
+          <meta property='og:description' content={t('home.label.promo') + ' ' + t('home.label.promo_long')} />
         </Helmet>
         {product === null && <Breadcrumb values={new Map([['products', t('menu.products')]])} />}
         <div id={'product-list'}>

@@ -16,6 +16,15 @@ const CompactWebDocument = () => {
       <>
         <Helmet>
           <title>{'Compact Web Document' + t('site.separator') + t('site.title')}</title>
+          <meta property='og:title' content={'Compact Web Document' + t('site.separator') + t('site.title')} />
+          <meta
+            content={t('news.compact_web_document.label.promo') + ' ' + t('news.compact_web_document.label.promo_long')}
+            name='description'
+          />
+          <meta
+            property='og:description'
+            content={t('news.compact_web_document.label.promo') + ' ' + t('news.compact_web_document.label.promo_long')}
+          />
         </Helmet>
         <Breadcrumb
           values={

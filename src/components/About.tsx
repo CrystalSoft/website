@@ -15,6 +15,9 @@ const About = () => {
       <>
         <Helmet>
           <title>{t('menu.about') + t('site.separator') + t('site.title')}</title>
+          <meta property='og:title' content={t('menu.about') + t('site.separator') + t('site.title')} />
+          <meta content={t('about.label.promo') + ' ' + t('about.label.promo_long')} name='description' />
+          <meta property='og:description' content={t('about.label.promo') + ' ' + t('about.label.promo_long')} />
         </Helmet>
         <Breadcrumb values={new Map([['about', t('menu.about')]])} />
         <div id={'about'}>
