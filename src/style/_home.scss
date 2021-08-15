@@ -153,7 +153,6 @@
     }
 
     .news {
-      height: 170px;
       background-color: white;
       margin-left: $default-padding;
       margin-right: $default-padding;
@@ -164,14 +163,8 @@
       // Mobile specific rules
       @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
         width: 100%;
-        height: 200px;
         flex: none;
         margin: 0 0 $default-big-padding-mobile;
-      }
-
-      // Tablet and big phones
-      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), (min-width: 768px) and (max-width: 1024px) {
-        height: 200px;
       }
 
       a {

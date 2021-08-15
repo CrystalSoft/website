@@ -41,6 +41,12 @@ function App() {
     setShowMobileMenu(!showMobileMenu)
   }
 
+  if (showMobileMenu) {
+    document.body.classList.add('mobile-menu')
+  } else {
+    document.body.classList.remove('mobile-menu')
+  }
+
   if (ready) {
     return (
       <>
