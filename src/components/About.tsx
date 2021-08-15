@@ -89,11 +89,11 @@ const About = () => {
               </div>
               <div className={'box hoverable light'}>
                 <div className={'icon main-color-5 darker'}>
-                  <i className='bx bxl-react' />
+                  <i className='bx bxl-telegram' />
                 </div>
                 <div className={'description'}>
-                  <strong>{t('about.label.frontend')}</strong>
-                  <span>{t('about.label.frontend_description')}</span>
+                  <strong>{t('about.label.telegram')}</strong>
+                  <span>{t('about.label.telegram_description')}</span>
                 </div>
               </div>
               <div className={'box hoverable light'}>

@@ -188,6 +188,11 @@ function App() {
             <div id={'footer-social'}>
               <ul>
                 <li>
+                  <a href={'https://t.me/CrystalSoftItalia'} target={'_blank'} rel='noreferrer'>
+                    <i className='bx-fw bx bxl-telegram' /> Telegram
+                  </a>
+                </li>
+                <li>
                   <a href={'https://github.com/CrystalSoft'} target={'_blank'} rel='noreferrer'>
                     <i className='bx-fw bx bxl-github' /> GitHub
                   </a>
