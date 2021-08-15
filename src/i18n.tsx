@@ -3,8 +3,9 @@ import backend from 'i18next-http-backend'
 import detector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 
+const languages = ['en', 'it']
+
 i18n.on('languageChanged', function (lng) {
-  const languages = ['it', 'en']
   i18n.languages = languages
 
   if (window.location.pathname == '/') {
@@ -32,7 +33,6 @@ const resources = {
     translation: translationIT
   }
 }
-
 i18n
   .use(backend)
   .use(detector)
@@ -40,12 +40,12 @@ i18n
   .init({
     resources,
     debug: false,
-    whitelist: ['en', 'it'],
+    whitelist: languages,
     fallbackLng: ['en'],
     detection: {
-      order: ['path'],
+      order: ['path', 'cookie', 'navigator', 'header'],
       lookupFromPathIndex: 0,
-      lookupQuerystring: 'lng'
+      caches: ['cookie']
     },
     interpolation: {
       escapeValue: false
