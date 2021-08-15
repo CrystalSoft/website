@@ -12,13 +12,20 @@ const PossoPartire = () => {
   const { t, ready } = useTranslation()
 
   if (ready) {
+    const description =
+      t('news.posso_partire.label.promo') +
+      ' ' +
+      t('news.posso_partire.label.promo_long')
+        .replace(/<[^>]+>/g, '')
+        .trim()
+
     return (
       <>
         <Helmet>
           <title>{'Posso partire?' + t('site.separator') + t('site.title')}</title>
           <meta property='og:title' content={'Posso partire?' + t('site.separator') + t('site.title')} />
-          <meta content={t('news.posso_partire.label.promo') + ' ' + t('news.posso_partire.label.promo_long')} name='description' />
-          <meta property='og:description' content={t('news.posso_partire.label.promo') + ' ' + t('news.posso_partire.label.promo_long')} />
+          <meta content={description} name='description' />
+          <meta property='og:description' content={description} />
         </Helmet>
         <Breadcrumb
           values={
@@ -32,8 +39,16 @@ const PossoPartire = () => {
           <div id={'promo'}>
             <div className={'inner padded'}>
               <div id={'promo-left'}>
-                <h2>{t('news.posso_partire.label.promo')}</h2>
-                <p>{t('news.posso_partire.label.promo_long')}</p>
+                <h2
+                  dangerouslySetInnerHTML={{
+                    __html: t('news.posso_partire.label.promo')
+                  }}
+                />
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t('news.posso_partire.label.promo_long')
+                  }}
+                />
                 <a href={'https://www.possopartire.it/'} target={'_blank'} className={'button'} rel='noreferrer'>
                   {t('news.label.link')}
                 </a>
@@ -47,12 +62,36 @@ const PossoPartire = () => {
           </div>
           <div id={'news-main'}>
             <div className={'inner padded big-content'}>
-              <p>{t('news.posso_partire.label.description')}</p>
-              <p>{t('news.posso_partire.label.description_2')}</p>
-              <p>{t('news.posso_partire.label.description_3')}</p>
-              <p>{t('news.posso_partire.label.description_4')}</p>
-              <p>{t('news.posso_partire.label.description_5')}</p>
-              <p>{t('news.posso_partire.label.description_6')}</p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('news.posso_partire.label.description')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('news.posso_partire.label.description_2')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('news.posso_partire.label.description_3')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('news.posso_partire.label.description_4')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('news.posso_partire.label.description_5')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('news.posso_partire.label.description_6')
+                }}
+              />
             </div>
           </div>
         </div>

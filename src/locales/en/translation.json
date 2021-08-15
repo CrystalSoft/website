@@ -45,7 +45,7 @@
   "technologies.label.description": "For us, using the latest technologies means to be the first in the market to experiment things.",
   "technologies.label.description_2": "In terms of knowledge, here in CrystalSoft we use a lot of programming language and tools, mainly we use: Rust, C/C++, TypeScript, PHP, Elixir, JavaScript, CSS, GraphQL, MongoDB, Docker, Kotlin, MySQL, Postgres SQL and many more.",
   "about.label.promo": "Who we are",
-  "about.label.promo_long": "CrystalSoft was born in 2005 as a Software House by an idea of Dario Cancelliere, initially creating PC software for Microsoft® Windows®.",
+  "about.label.promo_long": "CrystalSoft was born in 2005 as a Software House by an idea of <a href=\"https://www.dariocancelliere.it/\" target=\"_blank\">Dario Cancelliere</a>, initially creating PC software for Microsoft® Windows®.",
   "about.label.description": "For years we have dedicated ourselves to the creation of freeware software, many of these have become very popular on the web.",
   "about.label.description_2": "The proof of this, is the \"Mercante in Fiera\" game which was a hit, launched in 2005 with his last release in 2006 has been undermined and proclaimed almost a official game of the famous TV show.",
   "about.label.description_3": "Obviously we did not stop here, in 2009 we launched another software called WinRefine, it is used to preview multimedia files such as MP3, Images and other formats. It was subsequently reviewed by Softpedia reaching 4 out of 5 stars.",

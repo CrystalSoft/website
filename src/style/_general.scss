@@ -17,7 +17,7 @@ body {
 }
 
 a {
-  color: $text-color;
+  color: $text-color-very-light;
   text-decoration: none;
 
   &:hover {
@@ -321,6 +321,7 @@ strong {
         }
 
         a {
+          color: $text-color;
           text-transform: uppercase;
         }
       }
@@ -454,6 +455,7 @@ strong {
         }
 
         a {
+          color: $text-color;
           font-weight: 300;
 
           &.active {

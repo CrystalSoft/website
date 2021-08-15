@@ -15,13 +15,20 @@ const Home = () => {
   const { t, ready } = useTranslation()
 
   if (ready) {
+    const description =
+      t('home.label.promo') +
+      ' ' +
+      t('home.label.promo_long')
+        .replace(/<[^>]+>/g, '')
+        .trim()
+
     return (
       <div id={'home'}>
         <Helmet>
           <title>{t('home.site.title')}</title>
           <meta property='og:title' content={t('home.site.title')} />
-          <meta content={t('home.label.promo') + ' ' + t('home.label.promo_long')} name='description' />
-          <meta property='og:description' content={t('home.label.promo') + ' ' + t('home.label.promo_long')} />
+          <meta content={description} name='description' />
+          <meta property='og:description' content={description} />
         </Helmet>
         <Breadcrumb values={new Map([['', t('menu.home')]])} />
         <div id={'sub-header'}>
@@ -35,17 +42,33 @@ const Home = () => {
           <Waves />
           <div className={'inner padded'}>
             <div id={'promo-left'}>
-              <h2>{t('home.label.promo')}</h2>
-              <p>{t('home.label.promo_long')}</p>
+              <h2
+                dangerouslySetInnerHTML={{
+                  __html: t('home.label.promo')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('home.label.promo_long')
+                }}
+              />
               <Link to={'/about'} className={'button'}>
                 {t('label.discover_more')}
               </Link>
             </div>
             <div id={'promo-right'}>
               <div id={'promo-box'}>
-                <img src={logo} />
-                <h3>{t('home.promo.posso_partire_title')}</h3>
-                <p>{t('home.promo.posso_partire_description')}</p>
+                <img alt='Posso partire?' src={logo} />
+                <h3
+                  dangerouslySetInnerHTML={{
+                    __html: t('home.promo.posso_partire_title')
+                  }}
+                />
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t('home.promo.posso_partire_description')
+                  }}
+                />
                 <Link to={'/news/posso-partire'} className={'button light'}>
                   {t('label.discover_more')} <i className='bx-fw bx bxs-right-arrow-square' />
                 </Link>
@@ -55,14 +78,26 @@ const Home = () => {
         </div>
         <div className={'inner big-content padded'}>
           <div id={'home-intro'}>
-            <h4>{t('home.label.intro')}</h4>
+            <h4
+              dangerouslySetInnerHTML={{
+                __html: t('home.label.intro')
+              }}
+            />
             <div className={'box hoverable light'}>
               <div className={'icon main-color-2 darker'}>
                 <i className='bx bx-cloud-download' />
               </div>
               <div className={'description'}>
-                <strong>{t('home.label.freeware')}</strong>
-                <span>{t('home.label.freeware_description')}</span>
+                <strong
+                  dangerouslySetInnerHTML={{
+                    __html: t('home.label.freeware')
+                  }}
+                />
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: t('home.label.freeware_description')
+                  }}
+                />
               </div>
             </div>
             <div className={'box hoverable light'}>
@@ -70,8 +105,16 @@ const Home = () => {
                 <i className='bx bxl-html5' />
               </div>
               <div className={'description'}>
-                <strong>{t('home.label.web')}</strong>
-                <span>{t('home.label.web_description')}</span>
+                <strong
+                  dangerouslySetInnerHTML={{
+                    __html: t('home.label.web')
+                  }}
+                />
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: t('home.label.web_description')
+                  }}
+                />
               </div>
             </div>
             <div className={'box hoverable light'}>
@@ -79,22 +122,38 @@ const Home = () => {
                 <i className='bx bx-mobile' />
               </div>
               <div className={'description'}>
-                <strong>{t('home.label.mobile')}</strong>
-                <span>{t('home.label.mobile_description')}</span>
+                <strong
+                  dangerouslySetInnerHTML={{
+                    __html: t('home.label.mobile')
+                  }}
+                />
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: t('home.label.mobile_description')
+                  }}
+                />
               </div>
             </div>
           </div>
         </div>
         <div id={'home-show-case'}>
           <div className={'inner padded big-content'}>
-            <h4>{t('home.label.explore_products')}</h4>
+            <h4
+              dangerouslySetInnerHTML={{
+                __html: t('home.label.explore_products')
+              }}
+            />
             <div id={'home-products'}>
               <div className={'product hoverable'}>
                 <Link to={'/products/posso-partire'} className={'button light'} />
                 <div className={'image posso-partire'} />
                 <div className={'description'}>
                   <h5>Posso partire?</h5>
-                  <p>{t('home.products.posso_partire.description')}</p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t('home.products.posso_partire.description')
+                    }}
+                  />
                 </div>
               </div>
               <div className={'product hoverable'}>
@@ -102,7 +161,11 @@ const Home = () => {
                 <div className={'image compact-web-document'} />
                 <div className={'description'}>
                   <h5>Compact Web Document</h5>
-                  <p>{t('home.products.compact_web_document.description')}</p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t('home.products.compact_web_document.description')
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -113,20 +176,36 @@ const Home = () => {
         </div>
         <div id={'home-main'}>
           <div className={'inner padded'}>
-            <p>{t('home.label.main')}</p>
-            <p>{t('home.label.main_2')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t('home.label.main')
+              }}
+            />
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t('home.label.main_2')
+              }}
+            />
           </div>
         </div>
         <div id={'home-news'}>
           <div className={'inner padded big-content'}>
-            <h4>{t('home.label.news')}</h4>
+            <h4
+              dangerouslySetInnerHTML={{
+                __html: t('home.label.news')
+              }}
+            />
             <div id={'home-news'}>
               <div className={'news hoverable'}>
                 <Link to={'/news/posso-partire'} className={'button light'} />
                 <div className={'image posso-partire'} />
                 <div className={'description'}>
                   <h5>Posso partire?</h5>
-                  <p>{t('home.news.posso_partire.description')}</p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t('home.news.posso_partire.description')
+                    }}
+                  />
                 </div>
               </div>
               <div className={'news hoverable'}>
@@ -134,7 +213,11 @@ const Home = () => {
                 <div className={'image compact-web-document'} />
                 <div className={'description'}>
                   <h5>Compact Web Document</h5>
-                  <p>{t('home.news.compact_web_document.description')}</p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t('home.news.compact_web_document.description')
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -144,7 +227,11 @@ const Home = () => {
                 <div className={'image crazy-cricket'} />
                 <div className={'description'}>
                   <h5>Crazy Cricket</h5>
-                  <p>{t('home.news.crazy_cricket.description')}</p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t('home.news.crazy_cricket.description')
+                    }}
+                  />
                 </div>
               </div>
               <div className={'news hoverable'}>
@@ -152,7 +239,11 @@ const Home = () => {
                 <div className={'image risposta-sbagliata'} />
                 <div className={'description'}>
                   <h5>Risposta Sbagliata!</h5>
-                  <p>{t('home.news.risposta_sbagliata.description')}</p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: t('home.news.risposta_sbagliata.description')
+                    }}
+                  />
                 </div>
               </div>
             </div>

@@ -24,7 +24,11 @@ const Terms = () => {
         <div id={'terms'}>
           <div className={'inner'}>
             <p>
-              <h1>{t('menu.terms')}</h1>
+              <h1
+                dangerouslySetInnerHTML={{
+                  __html: t('menu.terms')
+                }}
+              />
               Le presenti Condizioni si applicano ai servizi disponibili su www.crystalsoft.it <br /> Utilizzando i nostri servizi
               disponibili sul sito, accetti le seguenti Condizioni d&apos;uso, che regolano i servizi offerti da CrystalSoft
               (&quot;noi&quot; o &quot;CrystalSoft&quot;).
@@ -113,9 +117,13 @@ const Terms = () => {
               <h4>Dati personali</h4>
               Utilizzando il sito, accetti che CrystalSoft (il &quot;titolare del trattamento&quot;) raccolga, tratti, trasferisca e
               conservi i tuoi dati personali sui nostri server situati nel territorio Europeo, come descritto nelle nostra{' '}
-              <Link exact to={'/privacy-policy'}>
-                {t('menu.privacy')}
-              </Link>
+              <Link
+                exact
+                to={'/privacy-policy'}
+                dangerouslySetInnerHTML={{
+                  __html: t('menu.privacy')
+                }}
+              />
               .
             </p>
           </div>

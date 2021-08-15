@@ -11,13 +11,20 @@ const About = () => {
   const { t, ready } = useTranslation()
 
   if (ready) {
+    const description =
+      t('about.label.promo') +
+      ' ' +
+      t('about.label.promo_long')
+        .replace(/<[^>]+>/g, '')
+        .trim()
+
     return (
       <>
         <Helmet>
           <title>{t('menu.about') + t('site.separator') + t('site.title')}</title>
           <meta property='og:title' content={t('menu.about') + t('site.separator') + t('site.title')} />
-          <meta content={t('about.label.promo') + ' ' + t('about.label.promo_long')} name='description' />
-          <meta property='og:description' content={t('about.label.promo') + ' ' + t('about.label.promo_long')} />
+          <meta content={description} name='description' />
+          <meta property='og:description' content={description} />
         </Helmet>
         <Breadcrumb values={new Map([['about', t('menu.about')]])} />
         <div id={'about'}>
@@ -25,42 +32,106 @@ const About = () => {
             <Waves />
             <div className={'inner padded'}>
               <div id={'promo-left'}>
-                <h2>{t('about.label.promo')}</h2>
-                <p>{t('about.label.promo_long')}</p>
+                <h2
+                  dangerouslySetInnerHTML={{
+                    __html: t('about.label.promo')
+                  }}
+                />
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t('about.label.promo_long')
+                  }}
+                />
               </div>
             </div>
           </div>
           <div id={'about-main'}>
             <div className={'inner padded big-content'}>
-              <p>{t('about.label.description')}</p>
-              <p>{t('about.label.description_2')}</p>
-              <p>{t('about.label.description_3')}</p>
-              <p>{t('about.label.description_4')}</p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('about.label.description')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('about.label.description_2')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('about.label.description_3')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('about.label.description_4')
+                }}
+              />
             </div>
           </div>
           <div id={'about-technologies'}>
             <div className={'inner padded big-content'}>
-              <h4>{t('technologies.label.main')}</h4>
-              <p>{t('technologies.label.description')}</p>
-              <p>{t('technologies.label.description_2')}</p>
+              <h4
+                dangerouslySetInnerHTML={{
+                  __html: t('technologies.label.main')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('technologies.label.description')
+                }}
+              />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t('technologies.label.description_2')
+                }}
+              />
             </div>
           </div>
           <div className={'inner padded big-content'}>
             <div id={'about-what-we-do'}>
-              <h4>{t('about.label.what_we_do')}</h4>
+              <h4
+                dangerouslySetInnerHTML={{
+                  __html: t('about.label.what_we_do')
+                }}
+              />
               <div>
-                <p>{t('about.label.description_5')}</p>
-                <p>{t('about.label.description_6')}</p>
-                <p>{t('about.label.description_7')}</p>
-                <p>{t('about.label.description_8')}</p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t('about.label.description_5')
+                  }}
+                />
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t('about.label.description_6')
+                  }}
+                />
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t('about.label.description_7')
+                  }}
+                />
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t('about.label.description_8')
+                  }}
+                />
               </div>
               <div className={'box hoverable light'}>
                 <div className={'icon main-color-2 darker'}>
                   <i className='bx bx-mobile-alt' />
                 </div>
                 <div className={'description'}>
-                  <strong>{t('about.label.apps')}</strong>
-                  <span>{t('about.label.apps_description')}</span>
+                  <strong
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.apps')
+                    }}
+                  />
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.apps_description')
+                    }}
+                  />
                 </div>
               </div>
               <div className={'box hoverable light'}>
@@ -68,8 +139,16 @@ const About = () => {
                   <i className='bx bx-cog' />
                 </div>
                 <div className={'description'}>
-                  <strong>{t('about.label.web_services')}</strong>
-                  <span>{t('about.label.web_services_description')}</span>
+                  <strong
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.web_services')
+                    }}
+                  />
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.web_services_description')
+                    }}
+                  />
                 </div>
               </div>
               <div className={'box hoverable light'}>
@@ -77,8 +156,16 @@ const About = () => {
                   <i className='bx bxl-chrome' />
                 </div>
                 <div className={'description'}>
-                  <strong>{t('about.label.web_sites')}</strong>
-                  <span>{t('about.label.web_sites_description')}</span>
+                  <strong
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.web_sites')
+                    }}
+                  />
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.web_sites_description')
+                    }}
+                  />
                 </div>
               </div>
               <div className={'box hoverable light'}>
@@ -86,8 +173,16 @@ const About = () => {
                   <i className='bx bxl-docker' />
                 </div>
                 <div className={'description'}>
-                  <strong>{t('about.label.docker')}</strong>
-                  <span>{t('about.label.docker_description')}</span>
+                  <strong
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.docker')
+                    }}
+                  />
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.docker_description')
+                    }}
+                  />
                 </div>
               </div>
               <div className={'box hoverable light'}>
@@ -95,8 +190,16 @@ const About = () => {
                   <i className='bx bxl-telegram' />
                 </div>
                 <div className={'description'}>
-                  <strong>{t('about.label.telegram')}</strong>
-                  <span>{t('about.label.telegram_description')}</span>
+                  <strong
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.telegram')
+                    }}
+                  />
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.telegram_description')
+                    }}
+                  />
                 </div>
               </div>
               <div className={'box hoverable light'}>
@@ -104,8 +207,16 @@ const About = () => {
                   <i className='bx bx-joystick' />
                 </div>
                 <div className={'description'}>
-                  <strong>{t('about.label.games')}</strong>
-                  <span>{t('about.label.games_description')}</span>
+                  <strong
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.games')
+                    }}
+                  />
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t('about.label.games_description')
+                    }}
+                  />
                 </div>
               </div>
             </div>

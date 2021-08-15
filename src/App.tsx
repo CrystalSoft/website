@@ -68,9 +68,14 @@ function App() {
                     <Route
                       path={base}
                       render={() => (
-                        <NavLink exact to={'/products'} activeClassName='active'>
-                          {t('menu.products')}
-                        </NavLink>
+                        <NavLink
+                          exact
+                          to={'/products'}
+                          activeClassName='active'
+                          dangerouslySetInnerHTML={{
+                            __html: t('menu.products')
+                          }}
+                        />
                       )}
                     />
                   </li>
@@ -78,9 +83,13 @@ function App() {
                     <Route
                       path={base}
                       render={() => (
-                        <NavLink exact to={'/news'}>
-                          {t('menu.news')}
-                        </NavLink>
+                        <NavLink
+                          exact
+                          to={'/news'}
+                          dangerouslySetInnerHTML={{
+                            __html: t('menu.news')
+                          }}
+                        />
                       )}
                     />
                   </li>
@@ -88,9 +97,13 @@ function App() {
                     <Route
                       path={base}
                       render={() => (
-                        <NavLink exact to={'/about'}>
-                          {t('menu.about')}
-                        </NavLink>
+                        <NavLink
+                          exact
+                          to={'/about'}
+                          dangerouslySetInnerHTML={{
+                            __html: t('menu.about')
+                          }}
+                        />
                       )}
                     />
                   </li>
@@ -116,13 +129,21 @@ function App() {
         </div>
         <div id={'pre-footer'} className={'container'}>
           <div className={'inner padded big-content'}>
-            <h4>{t('label.more_info')}</h4>
+            <h4
+              dangerouslySetInnerHTML={{
+                __html: t('label.more_info')
+              }}
+            />
             <Route
               path={base}
               render={() => (
-                <Link to={'/contacts'} className={'button bordered'}>
-                  {t('label.more_info_contact')}
-                </Link>
+                <Link
+                  to={'/contacts'}
+                  className={'button bordered'}
+                  dangerouslySetInnerHTML={{
+                    __html: t('label.more_info_contact')
+                  }}
+                />
               )}
             />
           </div>
@@ -145,9 +166,13 @@ function App() {
                   <Route
                     path={base}
                     render={() => (
-                      <Link exact to={'/about'}>
-                        {t('menu.about')}
-                      </Link>
+                      <Link
+                        exact
+                        to={'/about'}
+                        dangerouslySetInnerHTML={{
+                          __html: t('menu.about')
+                        }}
+                      />
                     )}
                   />
                 </li>
@@ -155,9 +180,13 @@ function App() {
                   <Route
                     path={base}
                     render={() => (
-                      <Link exact to={'/contacts'}>
-                        {t('menu.contacts')}
-                      </Link>
+                      <Link
+                        exact
+                        to={'/contacts'}
+                        dangerouslySetInnerHTML={{
+                          __html: t('menu.contacts')
+                        }}
+                      />
                     )}
                   />
                 </li>
@@ -167,9 +196,13 @@ function App() {
                   <Route
                     path={base}
                     render={() => (
-                      <Link exact to={'/terms'}>
-                        {t('menu.terms')}
-                      </Link>
+                      <Link
+                        exact
+                        to={'/terms'}
+                        dangerouslySetInnerHTML={{
+                          __html: t('menu.terms')
+                        }}
+                      />
                     )}
                   />
                 </li>
@@ -177,9 +210,13 @@ function App() {
                   <Route
                     path={base}
                     render={() => (
-                      <Link exact to={'/privacy-policy'}>
-                        {t('menu.privacy')}
-                      </Link>
+                      <Link
+                        exact
+                        to={'/privacy-policy'}
+                        dangerouslySetInnerHTML={{
+                          __html: t('menu.privacy')
+                        }}
+                      />
                     )}
                   />
                 </li>
@@ -231,7 +268,11 @@ function App() {
             </div>
             <div id={'footer-note'}>
               <span className={'copyright'}>&copy; 2021 CrystalSoft</span>
-              <span>{t('label.disclaimer')}</span>
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: t('label.disclaimer')
+                }}
+              />
             </div>
           </div>
         </footer>

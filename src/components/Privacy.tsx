@@ -21,7 +21,11 @@ const Privacy = () => {
         <Breadcrumb values={new Map([['privacy-policy', t('menu.privacy')]])} />
         <div id={'privacy'}>
           <div className={'inner'}>
-            <h1>{t('menu.privacy')}</h1>
+            <h1
+              dangerouslySetInnerHTML={{
+                __html: t('menu.privacy')
+              }}
+            />
             <p>
               <h2>I – INFORMAZIONI RELATIVE ALLA PRIVACY POLICY DEL SITO</h2>
               In questa sezione sono contenute le informazioni relative alle modalità di gestione di &quot;CrystalSoft&quot; in riferimento

@@ -24,7 +24,11 @@ const Contacts = () => {
             <i className='bx bxs-error' /> {t('label.working')}
             <br />
             <br />
-            <p>{t('contacts.label.email')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t('contacts.label.email')
+              }}
+            />
           </div>
         </div>
       </>
