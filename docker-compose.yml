@@ -9,6 +9,8 @@ services:
       - ./node_modules-docker:/home/crystalsoft/node_modules:cached
       - ./build-docker:/home/crystalsoft/build:cached
     env_file: .env
+    environment:
+      - PORT=${CS_FE_PORT}
     restart: always
     expose:
       - ${CS_FE_PORT}
