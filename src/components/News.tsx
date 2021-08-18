@@ -10,28 +10,21 @@ import CompactWebDocument from './news/CompactWebDocument'
 import Breadcrumb from './utils/Breadcrumb'
 import List from './news/List'
 import CrazyCricket from './news/CrazyCricket'
+import RispostaSbagliata from './news/RispostaSbagliata'
 
 const News = () => {
   const { t, ready } = useTranslation()
   const { newsSlug } = useParams<{ newsSlug: string }>()
 
   if (ready) {
-    let news: any = null
-    if (newsSlug !== undefined) {
-      switch (newsSlug) {
-        case 'posso-partire':
-          news = <PossoPartire />
-          break
-        case 'compact-web-document':
-          news = <CompactWebDocument />
-          break
-        case 'crazy-cricket':
-          news = <CrazyCricket />
-          break
-        default:
-          news = null
-      }
-    }
+    const news = new Map([
+      ['posso-partire', <PossoPartire key={0} />],
+      ['compact-web-document', <CompactWebDocument key={1} />],
+      ['crazy-cricket', <CrazyCricket key={2} />],
+      ['risposta-sbagliata', <RispostaSbagliata key={3} />]
+    ])
+
+    const newsItem = newsSlug !== undefined ? (news.has(newsSlug) ? news.get(newsSlug) : null) : null
 
     return (
       <>
@@ -41,9 +34,9 @@ const News = () => {
           <meta content={t('home.label.promo') + ' ' + t('home.label.promo_long')} name='description' />
           <meta property='og:description' content={t('home.label.promo') + ' ' + t('home.label.promo_long')} />
         </Helmet>
-        {news === null && <Breadcrumb values={new Map([['news', t('menu.news')]])} />}
+        {newsItem === null && <Breadcrumb values={new Map([['news', t('menu.news')]])} />}
         <div id={'news-list'}>
-          {news === null && (
+          {newsItem === null && (
             <div className={'inner padded big-content'}>
               <h4
                 dangerouslySetInnerHTML={{
@@ -55,7 +48,7 @@ const News = () => {
               </div>
             </div>
           )}
-          {news !== null && news}
+          {newsItem !== null && newsItem}
         </div>
       </>
     )

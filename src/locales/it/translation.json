@@ -95,5 +95,11 @@
   "news.crazy_cricket.label.description_2": "Effettua uno swipe verso sopra (a partire da sopra la terra) per far saltare il grillo. Maggiore sarà lo slide e maggiore sarà la potenza di salto che è visibile dalla barra di potenza in basso a destra. Puoi anche sparare toccando lo schermo una o più volte.",
   "news.crazy_cricket.label.description_3": "Le regole di questo gioco sono semplici, evita i burroni e uccidi i nemici collezionando più punti possibili. Durante la corsa si potranno ottenere vari potenziamenti che ti aiuteranno a scalare la classifica.",
   "news.crazy_cricket.label.description_4": "È disponibile una Classifica mondiale e una serie di Obiettivi attivando il Joystick sito nella Home del gioco.\nDurante il Gameover viene presentato un riassunto e cliccando sul Joystick si raggiungerà la classifica per poter condividere il proprio risultato.",
-  "news.crazy_cricket.label.description_5": "È possibile visualizzare gli Obiettivi toccando il pulsante \"Achievements\"."
+  "news.crazy_cricket.label.description_5": "È possibile visualizzare gli Obiettivi toccando il pulsante \"Achievements\".",
+  "news.risposta_sbagliata.label.promo": "Risposta Sbagliata!",
+  "news.risposta_sbagliata.label.promo_long": "Rispondi alle 21 domande che ti verrano proposte ma al \"contrario\"!",
+  "news.risposta_sbagliata.label.title": "Con Risposta Sbagliata! dovrai rispondere in modo sbagliato alla domanda che ti viene chiesta!",
+  "news.risposta_sbagliata.label.description": "Hai a disposizione 7 secondi per rispondere dopo il quale se non darai risposta o se la darai \"giusta\", tornerai alla prima domanda del gioco.",
+  "news.risposta_sbagliata.label.description_2": "All'inizio, il gioco ti darà 150 secondi in cui potrai rispondere sbagliando quante volte vorrai, passati i 150 secondi, il tuo montepremi verrà scalato di 1.000,00 € ogni secondo passato, durante questa fase avrai 100 secondi dopo il quale potrai decidere di fermare il gioco (premendo il pulsante con la stellina di ghiaccio) e provare a rispondere tutto di un fiato alle domande senza sbagliare nemmeno UNA volta (e senza che ti vengano scalati i soldi).",
+  "news.risposta_sbagliata.label.description_3": "Il gioco vanta di un ricchissimo Database di domande nuove ed originali, tutte diverse e senza errori."
 }

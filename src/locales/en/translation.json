@@ -90,10 +90,16 @@
   "news.compact_web_document.label.description_7": "Essentially, a CWD file, is a ZIP file with all HTML directives and resources included, usually a CWD Reader will read it in memory (RAM) and will render like a browser does, in fact, the official CWD Reader renders the page with the Blink engine.",
   "news.crazy_cricket.label.promo": "Crazy Cricket",
   "news.crazy_cricket.label.promo_long": "New addictive game for Android: jump from block to block with a cricket!",
-  "news.crazy_cricket.label.title": " We present, Crazy Cricket: a game for Android devices",
+  "news.crazy_cricket.label.title": "We present, Crazy Cricket: a game for Android devices",
   "news.crazy_cricket.label.description": "Simple addictive game ever. Jump from block to block and get the best score!",
   "news.crazy_cricket.label.description_2": "Swipe up to jump: into the right bottom you can view the current jump power that depends on your swipe moves.",
   "news.crazy_cricket.label.description_3": "The rules of this game are simple, avoid the pits and kill enemies by collecting as many points as possible. During the run you can get various Power-up that will help you to beat the high-score.",
   "news.crazy_cricket.label.description_4": "It's available a global ranking and a series of achievements by touching the Joystick on the Home of game.",
-  "news.crazy_cricket.label.description_5": "When game-over, will be shown a summary and if you touch the joystick you will see the global ranking in order to share your results."
+  "news.crazy_cricket.label.description_5": "When game-over, will be shown a summary and if you touch the joystick you will see the global ranking in order to share your results.",
+  "news.risposta_sbagliata.label.promo": "Risposta Sbagliata!",
+  "news.risposta_sbagliata.label.promo_long": "Rispondi alle 21 domande che ti verrano proposte ma al \"contrario\"!",
+  "news.risposta_sbagliata.label.title": "Con Risposta Sbagliata! dovrai rispondere in modo sbagliato alla domanda che ti viene chiesta!",
+  "news.risposta_sbagliata.label.description": "Hai a disposizione 7 secondi per rispondere dopo il quale se non darai risposta o se la darai \"giusta\", tornerai alla prima domanda del gioco.",
+  "news.risposta_sbagliata.label.description_2": "All'inizio, il gioco ti darà 150 secondi in cui potrai rispondere sbagliando quante volte vorrai, passati i 150 secondi, il tuo montepremi verrà scalato di 1.000,00 € ogni secondo passato, durante questa fase avrai 100 secondi dopo il quale potrai decidere di fermare il gioco (premendo il pulsante con la stellina di ghiaccio) e provare a rispondere tutto di un fiato alle domande senza sbagliare nemmeno UNA volta (e senza che ti vengano scalati i soldi).",
+  "news.risposta_sbagliata.label.description_3": "Il gioco vanta di un ricchissimo Database di domande nuove ed originali, tutte diverse e senza errori."
 }

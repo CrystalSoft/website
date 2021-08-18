@@ -765,6 +765,7 @@ strong {
           position: relative;
           top: initial;
           left: initial;
+          right: initial;
           transform: none;
         }
       }
@@ -773,7 +774,6 @@ strong {
       @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
         width: auto;
         float: none;
-        margin: $default-padding-mobile;
       }
     }
 

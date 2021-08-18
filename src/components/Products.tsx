@@ -5,10 +5,14 @@ import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 
 import MyLoader from './utils/Loader'
-
 // import PossoPartire from './products/PossoPartire'
 import PossoPartire from './news/PossoPartire'
+// import CompactWebDocument from './products/CompactWebDocument'
 import CompactWebDocument from './news/CompactWebDocument'
+// import CrazyCricket from './products/CrazyCricket'
+// import RispostaSbagliata from './products/RispostaSbagliata'
+// import WinRefine from './products/WinRefine'
+// import WPCCC from './products/WPCCC'
 import Breadcrumb from './utils/Breadcrumb'
 
 const Products = () => {
@@ -16,37 +20,16 @@ const Products = () => {
   const { productName } = useParams<{ productName: string }>()
 
   if (ready) {
-    let product: any = null
-    if (productName !== undefined) {
-      switch (productName) {
-        // case 'posso-partire':
-        //   product = <PossoPartire />
-        //   break
-        // case 'compact-web-document':
-        //   product = <PossoPartire />
-        //   break
-        // case 'crazy-cricket':
-        //   product = <PossoPartire />
-        //   break
-        // case 'risposta-sbagliata':
-        //   product = <PossoPartire />
-        //   break
-        // case 'win-refine':
-        //   product = <PossoPartire />
-        //   break
-        // case 'wpcc-winmx-professional-chat-client':
-        //   product = <PossoPartire />
-        //   break
-        case 'posso-partire':
-          product = <PossoPartire />
-          break
-        case 'compact-web-document':
-          product = <CompactWebDocument />
-          break
-        default:
-          product = null
-      }
-    }
+    const products = new Map([
+      ['posso-partire', <PossoPartire key={0} />],
+      ['compact-web-document', <CompactWebDocument key={1} />]
+      // ['crazy-cricket', <CrazyCricket key={2} />],
+      // ['risposta-sbagliata', <RispostaSbagliata key={3} />]
+      // ['win-refine', <WinRefine key={4} />]
+      // ['wpcc-winmx-professional-chat-client', <WPCCC key={4} />]
+    ])
+
+    const product = productName !== undefined ? (products.has(productName) ? products.get(productName) : null) : null
 
     return (
       <>
