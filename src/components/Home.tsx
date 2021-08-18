@@ -10,6 +10,7 @@ import Waves from './utils/Waves'
 
 import logo from '../images/promo.png'
 import Breadcrumb from './utils/Breadcrumb'
+import List from './news/List'
 
 const Home = () => {
   const { t, ready } = useTranslation()
@@ -195,57 +196,8 @@ const Home = () => {
                 __html: t('home.label.news')
               }}
             />
-            <div id={'home-news'}>
-              <div className={'news hoverable'}>
-                <Link to={'/news/posso-partire'} className={'button light'} />
-                <div className={'image posso-partire'} />
-                <div className={'description'}>
-                  <h5>Posso partire?</h5>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: t('home.news.posso_partire.description')
-                    }}
-                  />
-                </div>
-              </div>
-              <div className={'news hoverable'}>
-                <Link to={'/news/compact-web-document'} className={'button light'} />
-                <div className={'image compact-web-document'} />
-                <div className={'description'}>
-                  <h5>Compact Web Document</h5>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: t('home.news.compact_web_document.description')
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-            <div id={'home-news'}>
-              <div className={'news hoverable'}>
-                <Link to={'/news/crazy-cricket'} className={'button light'} />
-                <div className={'image crazy-cricket'} />
-                <div className={'description'}>
-                  <h5>Crazy Cricket</h5>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: t('home.news.crazy_cricket.description')
-                    }}
-                  />
-                </div>
-              </div>
-              <div className={'news hoverable'}>
-                <Link to={'/news/risposta-sbagliata'} className={'button light'} />
-                <div className={'image risposta-sbagliata'} />
-                <div className={'description'}>
-                  <h5>Risposta Sbagliata!</h5>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: t('home.news.risposta_sbagliata.description')
-                    }}
-                  />
-                </div>
-              </div>
+            <div id={'home-news-container'}>
+              <List limit={4} />
             </div>
             <Link to={'/news'} className={'button'}>
               {t('label.news')}

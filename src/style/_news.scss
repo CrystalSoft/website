@@ -1,3 +1,9 @@
+#news-list {
+  #news-container {
+    @include news-container(100%, "100% auto", "left center");
+  }
+}
+
 #news {
   #promo {
     background-color: $main-color-0;

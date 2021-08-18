@@ -333,6 +333,89 @@ strong {
   }
 }
 
+@mixin news-container($column, $background-size, $background-position) {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: -$default-padding;
+  margin-right: -$default-padding;
+  margin-top: $default-big-padding;
+
+  // Mobile specific rules
+  @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+    margin: 0;
+  }
+
+  .news {
+    background-color: white;
+    margin-left: $default-padding;
+    margin-right: $default-padding;
+    margin-bottom: $default-big-padding;
+    flex: 0 0 calc(#{$column} - #{$default-padding * 2});
+    position: relative;
+    overflow: hidden;
+
+    // Mobile specific rules
+    @media (min-width: 0px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+      width: 100%;
+      flex: none;
+      margin: 0 0 $default-big-padding-mobile;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .image {
+      width: 30%;
+      height: 100%;
+      background-size: #{$background-size};
+      background-repeat: no-repeat;
+      background-position: #{$background-position};
+      float: left;
+
+      &.posso-partire {
+        background-image: url('../images/products/posso-partire.png');
+      }
+
+      &.compact-web-document {
+        background-image: url('../images/products/compact-web-document.png');
+      }
+
+      &.crazy-cricket {
+        background-size: 100%;
+        background-position: center left;
+        background-image: url('../images/products/crazy-cricket.webp');
+      }
+
+      &.risposta-sbagliata {
+        background-image: url('../images/products/risposta-sbagliata.webp');
+      }
+    }
+
+    .description {
+      width: 70%;
+      float: right;
+      padding: $default-padding;
+
+      h5 {
+        .news-date {
+          font-weight: 200;
+          color: $text-color-light;
+        }
+      }
+
+      p {
+        margin-top: $default-padding-2;
+      }
+    }
+  }
+}
+
 #header {
   background: linear-gradient(to right, $main-color-2, $main-color-1, $main-color-9) no-repeat bottom left;
   background-size: 100% 10px;

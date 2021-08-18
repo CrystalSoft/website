@@ -8,6 +8,7 @@ import MyLoader from './utils/Loader'
 import PossoPartire from './news/PossoPartire'
 import CompactWebDocument from './news/CompactWebDocument'
 import Breadcrumb from './utils/Breadcrumb'
+import List from './news/List'
 
 const News = () => {
   const { t, ready } = useTranslation()
@@ -39,8 +40,15 @@ const News = () => {
         {news === null && <Breadcrumb values={new Map([['news', t('menu.news')]])} />}
         <div id={'news-list'}>
           {news === null && (
-            <div className={'inner'}>
-              <i className='bx bxs-error' /> {t('label.working')}
+            <div className={'inner padded big-content'}>
+              <h4
+                dangerouslySetInnerHTML={{
+                  __html: t('news.label.main')
+                }}
+              />
+              <div id={'news-container'}>
+                <List limit={4} />
+              </div>
             </div>
           )}
           {news !== null && news}
