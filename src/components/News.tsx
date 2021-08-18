@@ -9,6 +9,7 @@ import PossoPartire from './news/PossoPartire'
 import CompactWebDocument from './news/CompactWebDocument'
 import Breadcrumb from './utils/Breadcrumb'
 import List from './news/List'
+import CrazyCricket from './news/CrazyCricket'
 
 const News = () => {
   const { t, ready } = useTranslation()
@@ -23,6 +24,9 @@ const News = () => {
           break
         case 'compact-web-document':
           news = <CompactWebDocument />
+          break
+        case 'crazy-cricket':
+          news = <CrazyCricket />
           break
         default:
           news = null
@@ -47,7 +51,7 @@ const News = () => {
                 }}
               />
               <div id={'news-container'}>
-                <List limit={4} />
+                <List />
               </div>
             </div>
           )}

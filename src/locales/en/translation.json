@@ -70,6 +70,7 @@
   "contacts.label.email": "You can contact us at: info@crystalsoft.it",
   "news.label.main": "Our news",
   "news.label.link": "Visit the website",
+  "news.label.play_store": "Go to Play Store",
   "news.posso_partire.label.promo": "Posso partire?",
   "news.posso_partire.label.promo_long": "È un servizio pensato e creato per aiutare le persone che vogliono viaggiare all'estero ma che trovano difficile capire in quale paese possono o meno spostarsi.",
   "news.posso_partire.label.description": "L'emergenza pandemica Covid-19 ha messo tutti a dura prova ed è sempre più difficile capire dove si può viaggiare per turismo.",
@@ -86,5 +87,13 @@
   "news.compact_web_document.label.description_4": "Compact Web Document also known as CWD, is an innovative document format that is made for pixel perfect document viewing on any platform possible. In fact, CWD is (or, will be) available for Linux, Microsoft ® Windows ®, MacOSX, Android and iOS.",
   "news.compact_web_document.label.description_5": "It's an innovative embedded web document that comes with the benefit of the web world in a document thinking, like Adobe PDF, Microsoft ® Word, ePUB and other similar format.",
   "news.compact_web_document.label.description_6": "You can think as a web page embedded on a portable file with all the benefits of a web page but the portability of a straightforward document.",
-  "news.compact_web_document.label.description_7": "Essentially, a CWD file, is a ZIP file with all HTML directives and resources included, usually a CWD Reader will read it in memory (RAM) and will render like a browser does, in fact, the official CWD Reader renders the page with the Blink engine."
+  "news.compact_web_document.label.description_7": "Essentially, a CWD file, is a ZIP file with all HTML directives and resources included, usually a CWD Reader will read it in memory (RAM) and will render like a browser does, in fact, the official CWD Reader renders the page with the Blink engine.",
+  "news.crazy_cricket.label.promo": "Crazy Cricket",
+  "news.crazy_cricket.label.promo_long": "New addictive game for Android: jump from block to block with a cricket!",
+  "news.crazy_cricket.label.title": " We present, Crazy Cricket: a game for Android devices",
+  "news.crazy_cricket.label.description": "Simple addictive game ever. Jump from block to block and get the best score!",
+  "news.crazy_cricket.label.description_2": "Swipe up to jump: into the right bottom you can view the current jump power that depends on your swipe moves.",
+  "news.crazy_cricket.label.description_3": "The rules of this game are simple, avoid the pits and kill enemies by collecting as many points as possible. During the run you can get various Power-up that will help you to beat the high-score.",
+  "news.crazy_cricket.label.description_4": "It's available a global ranking and a series of achievements by touching the Joystick on the Home of game.",
+  "news.crazy_cricket.label.description_5": "When game-over, will be shown a summary and if you touch the joystick you will see the global ranking in order to share your results."
 }

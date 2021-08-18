@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 // @ts-ignore
 import { Link } from 'react-router-i18n'
 
-const List = ({ limit = 4 }: { limit?: number }) => {
+const List = ({ limit }: { limit?: number }) => {
   const { t, ready } = useTranslation()
 
   const news = [
@@ -67,7 +67,7 @@ const List = ({ limit = 4 }: { limit?: number }) => {
   ]
 
   if (ready) {
-    return <>{news.slice(0, limit)}</>
+    return <>{limit ? news.slice(0, limit) : news}</>
   }
 
   return <></>
