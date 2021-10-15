@@ -9,7 +9,8 @@ i18n.on('languageChanged', function (lng) {
   i18n.languages = languages
 
   if (window.location.pathname == '/') {
-    window.location.replace(lng + window.location.pathname)
+    let url = lng + window.location.pathname
+    window.history.pushState({ path: url }, '', url)
   }
 
   if (window.location.pathname.substring(0, 3) !== '/' + lng) {
@@ -18,7 +19,8 @@ i18n.on('languageChanged', function (lng) {
       pathname = pathname.replace('/' + language, '')
     })
 
-    window.location.replace('/' + lng + pathname)
+    let url = '/' + lng + pathname + window.location.search
+    window.history.pushState({ path: url }, '', url)
   }
 })
 
